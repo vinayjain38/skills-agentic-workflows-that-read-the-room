@@ -1,0 +1,24 @@
+﻿2026-08-27T04:27:35.7887674Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:27:35.7888251Z with:
+2026-08-27T04:27:35.7900689Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_version_updates.cjs');
+await main();
+
+2026-08-27T04:27:35.7907358Z   github-token: ***
+2026-08-27T04:27:35.7912350Z   debug: false
+2026-08-27T04:27:35.7912731Z   user-agent: actions/github-script
+2026-08-27T04:27:35.7913108Z   result-encoding: json
+2026-08-27T04:27:35.7915030Z   retries: 0
+2026-08-27T04:27:35.7917949Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:27:35.7919110Z env:
+2026-08-27T04:27:35.7920406Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-27T04:27:35.7921440Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:27:35.7923266Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:27:35.7925963Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: cc02120371b4ce0b
+2026-08-27T04:27:35.7927218Z   GITHUB_AW_OTEL_JOB_START_MS: 1787804842908
+2026-08-27T04:27:35.7928385Z   GH_AW_COMPILED_VERSION: v0.86.2
+2026-08-27T04:27:35.7928724Z ##[endgroup]
+2026-08-27T04:27:36.7863279Z Checking compile-agentic version: v0.86.2
+2026-08-27T04:27:36.7914584Z Fetching update configuration from: https://raw.githubusercontent.com/github/gh-aw-actions/main/.github/aw/compat.json
+2026-08-27T04:27:37.0156151Z ✅ Version check passed: v0.86.2

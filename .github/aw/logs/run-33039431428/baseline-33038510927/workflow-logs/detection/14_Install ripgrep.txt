@@ -1,0 +1,49 @@
+﻿2026-08-27T04:11:32.8304219Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_ripgrep.sh"
+2026-08-27T04:11:32.8305025Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_ripgrep.sh"[0m
+2026-08-27T04:11:32.8343305Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:11:32.8343732Z env:
+2026-08-27T04:11:32.8344058Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:11:32.8344611Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:11:32.8345074Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:11:32.8345510Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:11:32.8345936Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:11:32.8346339Z ##[endgroup]
+2026-08-27T04:11:32.8417969Z ripgrep not found; installing with apt-get...
+2026-08-27T04:11:39.6425715Z Selecting previously unselected package ripgrep.
+2026-08-27T04:11:39.6675604Z (Reading database ... 
+2026-08-27T04:11:39.6676514Z (Reading database ... 5%
+2026-08-27T04:11:39.6677095Z (Reading database ... 10%
+2026-08-27T04:11:39.6677663Z (Reading database ... 15%
+2026-08-27T04:11:39.6678470Z (Reading database ... 20%
+2026-08-27T04:11:39.6679017Z (Reading database ... 25%
+2026-08-27T04:11:39.6679603Z (Reading database ... 30%
+2026-08-27T04:11:39.6680036Z (Reading database ... 35%
+2026-08-27T04:11:39.6680620Z (Reading database ... 40%
+2026-08-27T04:11:39.6681043Z (Reading database ... 45%
+2026-08-27T04:11:39.6681646Z (Reading database ... 50%
+2026-08-27T04:11:39.6719481Z (Reading database ... 55%
+2026-08-27T04:11:39.7742453Z (Reading database ... 60%
+2026-08-27T04:11:39.9443937Z (Reading database ... 65%
+2026-08-27T04:11:40.1405105Z (Reading database ... 70%
+2026-08-27T04:11:40.3309458Z (Reading database ... 75%
+2026-08-27T04:11:40.4859573Z (Reading database ... 80%
+2026-08-27T04:11:40.6891424Z (Reading database ... 85%
+2026-08-27T04:11:40.8448968Z (Reading database ... 90%
+2026-08-27T04:11:41.0536124Z (Reading database ... 95%
+2026-08-27T04:11:41.0537012Z (Reading database ... 100%
+2026-08-27T04:11:41.0538159Z (Reading database ... 203124 files and directories currently installed.)
+2026-08-27T04:11:41.0583922Z Preparing to unpack .../ripgrep_14.1.0-1_amd64.deb ...
+2026-08-27T04:11:41.0897871Z Unpacking ripgrep (14.1.0-1) ...
+2026-08-27T04:11:41.1673755Z Setting up ripgrep (14.1.0-1) ...
+2026-08-27T04:11:41.1710205Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-08-27T04:11:41.1736124Z Not building database; man-db/auto-update is not 'true'.
+2026-08-27T04:11:41.7499051Z 
+2026-08-27T04:11:41.7499965Z Running kernel seems to be up-to-date.
+2026-08-27T04:11:41.7500364Z 
+2026-08-27T04:11:41.7500607Z No services need to be restarted.
+2026-08-27T04:11:41.7501002Z 
+2026-08-27T04:11:41.7501196Z No containers need to be restarted.
+2026-08-27T04:11:41.7501542Z 
+2026-08-27T04:11:41.7501835Z No user sessions are running outdated binaries.
+2026-08-27T04:11:41.7502421Z 
+2026-08-27T04:11:41.7502743Z No VM guests are running outdated hypervisor (qemu) binaries on this host.

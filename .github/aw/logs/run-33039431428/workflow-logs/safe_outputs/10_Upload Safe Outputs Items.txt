@@ -1,0 +1,45 @@
+﻿2026-08-27T04:36:57.3305880Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:36:57.3306757Z with:
+2026-08-27T04:36:57.3307201Z   name: safe-outputs-items
+2026-08-27T04:36:57.3307953Z   path: /tmp/gh-aw/safe-output-items.jsonl
+/tmp/gh-aw/temporary-id-map.json
+
+2026-08-27T04:36:57.3308749Z   if-no-files-found: ignore
+2026-08-27T04:36:57.3309266Z   compression-level: 6
+2026-08-27T04:36:57.3310189Z   overwrite: false
+2026-08-27T04:36:57.3310691Z   include-hidden-files: false
+2026-08-27T04:36:57.3311205Z   archive: true
+2026-08-27T04:36:57.3311641Z env:
+2026-08-27T04:36:57.3312057Z   GH_AW_AGENT_AIC: 28.653
+2026-08-27T04:36:57.3312547Z   GH_AW_AIC: 28.653
+2026-08-27T04:36:57.3313018Z   GH_AW_AMBIENT_CONTEXT: 22395
+2026-08-27T04:36:57.3313918Z   GH_AW_CALLER_WORKFLOW_ID: vinayjain38/skills-agentic-workflows-that-read-the-room/update-github-info
+2026-08-27T04:36:57.3314873Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-27T04:36:57.3315437Z   GH_AW_DETECTION_REASON: 
+2026-08-27T04:36:57.3315948Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-27T04:36:57.3316486Z   GH_AW_ENGINE_ID: copilot
+2026-08-27T04:36:57.3316987Z   GH_AW_ENGINE_MODEL: gpt-4o
+2026-08-27T04:36:57.3317515Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:36:57.3318200Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-27T04:36:57.3318744Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:36:57.3319340Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:36:57.3320829Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:36:57.3322185Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:36:57.3322908Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 359acb43a183c4c3
+2026-08-27T04:36:57.3323561Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805414704
+2026-08-27T04:36:57.3324143Z   GH_HOST: github.com
+2026-08-27T04:36:57.3324617Z ##[endgroup]
+2026-08-27T04:36:57.5316622Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-08-27T04:36:57.5330189Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-08-27T04:36:57.5334433Z With the provided path, there will be 1 file uploaded
+2026-08-27T04:36:57.5346794Z Artifact name is valid!
+2026-08-27T04:36:57.5350138Z Root directory input is valid!
+2026-08-27T04:36:57.7804268Z Uploading artifact: safe-outputs-items.zip
+2026-08-27T04:36:57.7902011Z Beginning upload of artifact content to blob storage
+2026-08-27T04:36:57.9568562Z Uploaded bytes 162
+2026-08-27T04:36:57.9908271Z Finished uploading artifact content to blob storage!
+2026-08-27T04:36:57.9914311Z SHA256 digest of uploaded artifact is acec6bf037a8259f01509b659b3d88d23407478f46097548916e8298b232eb1e
+2026-08-27T04:36:57.9918085Z Finalizing artifact upload
+2026-08-27T04:36:58.2383418Z Artifact safe-outputs-items successfully finalized. Artifact ID 9633453099
+2026-08-27T04:36:58.2387911Z Artifact safe-outputs-items has been successfully uploaded! Final size is 162 bytes. Artifact ID is 9633453099
+2026-08-27T04:36:58.2401265Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428/artifacts/9633453099

@@ -1,0 +1,39 @@
+﻿2026-08-27T04:13:05.1008029Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:13:05.1157046Z with:
+2026-08-27T04:13:05.1157827Z   name: usage
+2026-08-27T04:13:05.1206064Z   path: /tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-08-27T04:13:05.1208619Z   if-no-files-found: ignore
+2026-08-27T04:13:05.1209173Z   compression-level: 6
+2026-08-27T04:13:05.1209662Z   overwrite: false
+2026-08-27T04:13:05.1210152Z   include-hidden-files: false
+2026-08-27T04:13:05.1210666Z   archive: true
+2026-08-27T04:13:05.1211094Z env:
+2026-08-27T04:13:05.1211505Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:13:05.1212110Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:13:05.1212888Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: dc385e130c6e8550
+2026-08-27T04:13:05.1213827Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803982002
+2026-08-27T04:13:05.1269157Z ##[endgroup]
+2026-08-27T04:13:05.5932310Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-08-27T04:13:05.5960940Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-08-27T04:13:05.5963323Z With the provided path, there will be 5 files uploaded
+2026-08-27T04:13:05.5973955Z Artifact name is valid!
+2026-08-27T04:13:05.5976675Z Root directory input is valid!
+2026-08-27T04:13:06.4161351Z Uploading artifact: usage.zip
+2026-08-27T04:13:06.4162328Z Beginning upload of artifact content to blob storage
+2026-08-27T04:13:06.4164150Z Uploaded bytes 1950
+2026-08-27T04:13:06.4164736Z Finished uploading artifact content to blob storage!
+2026-08-27T04:13:06.4165759Z SHA256 digest of uploaded artifact is fb7f97b2317554eeae42ddc3e1ee8d37e5ca266e1078539f21c035c3fb9e314f
+2026-08-27T04:13:06.4166749Z Finalizing artifact upload
+2026-08-27T04:13:06.5516379Z Artifact usage successfully finalized. Artifact ID 9633014244
+2026-08-27T04:13:06.5517599Z Artifact usage has been successfully uploaded! Final size is 1950 bytes. Artifact ID is 9633014244
+2026-08-27T04:13:06.5519154Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33038510927/artifacts/9633014244

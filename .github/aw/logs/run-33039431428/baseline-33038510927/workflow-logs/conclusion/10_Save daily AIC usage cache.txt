@@ -1,0 +1,14 @@
+﻿2026-08-27T04:13:07.8918570Z ##[group]Run actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-08-27T04:13:07.8935235Z with:
+2026-08-27T04:13:07.8936563Z   key: agentic-workflow-usage-updategithubinfo-33038510927
+2026-08-27T04:13:07.8938301Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:13:07.8939798Z   enableCrossOsArchive: false
+2026-08-27T04:13:07.8940958Z env:
+2026-08-27T04:13:07.8941859Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:13:07.8943414Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:13:07.8946003Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: dc385e130c6e8550
+2026-08-27T04:13:07.8961304Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803982002
+2026-08-27T04:13:07.8962753Z ##[endgroup]
+2026-08-27T04:13:08.1713376Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room --files-from manifest.txt --use-compress-program zstdmt
+2026-08-27T04:13:08.6123896Z Sent 345 of 345 (100.0%), 0.0 MBs/sec
+2026-08-27T04:13:08.7520156Z Cache saved with key: agentic-workflow-usage-updategithubinfo-33038510927

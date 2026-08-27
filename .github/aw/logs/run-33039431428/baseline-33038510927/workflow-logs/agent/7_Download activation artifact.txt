@@ -1,0 +1,32 @@
+﻿2026-08-27T04:09:37.9136056Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:09:37.9136519Z with:
+2026-08-27T04:09:37.9136729Z   name: activation
+2026-08-27T04:09:37.9136956Z   path: /tmp/gh-aw
+2026-08-27T04:09:37.9137191Z   merge-multiple: false
+2026-08-27T04:09:37.9137557Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:09:37.9137958Z   run-id: 33038510927
+2026-08-27T04:09:37.9138195Z   skip-decompress: false
+2026-08-27T04:09:37.9138438Z   digest-mismatch: error
+2026-08-27T04:09:37.9138665Z env:
+2026-08-27T04:09:37.9138856Z   DEFAULT_BRANCH: main
+2026-08-27T04:09:37.9139086Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:09:37.9139334Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:09:37.9139572Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:09:37.9139866Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:09:37.9140191Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:09:37.9140471Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:09:37.9140844Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:09:37.9141250Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 53609065d5d06e70
+2026-08-27T04:09:37.9141570Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803776313
+2026-08-27T04:09:37.9141844Z ##[endgroup]
+2026-08-27T04:09:38.0497574Z Downloading single artifact
+2026-08-27T04:09:38.2844022Z Preparing to download the following artifacts:
+2026-08-27T04:09:38.2845191Z - activation (ID: 9632944471, Size: 652585, Expected Digest: sha256:266eb12a8b5a573e359df0ff220d4640dd8b5c55217ad27f0dcabe9f229fb6c0)
+2026-08-27T04:09:38.7141105Z Redirecting to blob download url: https://productionresultssa6.blob.core.windows.net/actions-results/dd00c5b2-37ff-4603-9f24-19bdef59813c/workflow-job-run-73967f00-8e15-536e-9799-2fc93baa88df/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip
+2026-08-27T04:09:38.7142436Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:09:38.9314477Z (node:3834) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:09:38.9316385Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:09:39.2045518Z SHA256 digest of downloaded artifact is 266eb12a8b5a573e359df0ff220d4640dd8b5c55217ad27f0dcabe9f229fb6c0
+2026-08-27T04:09:39.2046188Z Artifact download completed successfully.
+2026-08-27T04:09:39.2046538Z Total of 1 artifact(s) downloaded
+2026-08-27T04:09:39.2050330Z Download artifact has finished successfully

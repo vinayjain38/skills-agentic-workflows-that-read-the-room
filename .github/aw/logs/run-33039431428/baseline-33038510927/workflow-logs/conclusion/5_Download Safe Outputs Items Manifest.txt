@@ -1,0 +1,26 @@
+﻿2026-08-27T04:13:03.7366268Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:13:03.7367204Z with:
+2026-08-27T04:13:03.7367684Z   name: safe-outputs-items
+2026-08-27T04:13:03.7368316Z   path: /tmp/gh-aw/
+2026-08-27T04:13:03.7368865Z   merge-multiple: false
+2026-08-27T04:13:03.7369569Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:13:03.7370306Z   run-id: 33038510927
+2026-08-27T04:13:03.7370776Z   skip-decompress: false
+2026-08-27T04:13:03.7371256Z   digest-mismatch: error
+2026-08-27T04:13:03.7371715Z env:
+2026-08-27T04:13:03.7372117Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:13:03.7372720Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:13:03.7373787Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: dc385e130c6e8550
+2026-08-27T04:13:03.7374471Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803982002
+2026-08-27T04:13:03.7375022Z ##[endgroup]
+2026-08-27T04:13:04.4134933Z Downloading single artifact
+2026-08-27T04:13:04.4137543Z Preparing to download the following artifacts:
+2026-08-27T04:13:04.4138787Z - safe-outputs-items (ID: 9633008183, Size: 301, Expected Digest: sha256:993609bf9e1e8a77284412a10a80590db905ac3c8ec39d40dab461b95f405ab9)
+2026-08-27T04:13:04.7488786Z (node:1415) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:13:04.7549132Z Redirecting to blob download url: https://productionresultssa6.blob.core.windows.net/actions-results/dd00c5b2-37ff-4603-9f24-19bdef59813c/workflow-job-run-69c87862-1a98-581a-a670-2d5a3b60c590/artifacts/140086647422da92f7ddc36c3ae296f3ebb1dfa20d074a5f6305bad1022cc591.zip
+2026-08-27T04:13:04.7551292Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:13:04.7974892Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:13:04.7977527Z SHA256 digest of downloaded artifact is 993609bf9e1e8a77284412a10a80590db905ac3c8ec39d40dab461b95f405ab9
+2026-08-27T04:13:04.8138942Z Artifact download completed successfully.
+2026-08-27T04:13:04.8145286Z Total of 1 artifact(s) downloaded
+2026-08-27T04:13:04.8155507Z Download artifact has finished successfully

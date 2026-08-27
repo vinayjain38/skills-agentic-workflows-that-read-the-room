@@ -1,0 +1,26 @@
+﻿2026-08-27T04:11:13.3015246Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:11:13.3015778Z with:
+2026-08-27T04:11:13.3016101Z   name: agent
+2026-08-27T04:11:13.3016403Z   path: /tmp/gh-aw/
+2026-08-27T04:11:13.3016701Z   merge-multiple: false
+2026-08-27T04:11:13.3017122Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:11:13.3017626Z   run-id: 33038510927
+2026-08-27T04:11:13.3017928Z   skip-decompress: false
+2026-08-27T04:11:13.3018252Z   digest-mismatch: error
+2026-08-27T04:11:13.3018545Z env:
+2026-08-27T04:11:13.3018843Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:11:13.3019277Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:11:13.3019700Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:11:13.3020106Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:11:13.3020446Z ##[endgroup]
+2026-08-27T04:11:13.4299307Z Downloading single artifact
+2026-08-27T04:11:13.6617794Z Preparing to download the following artifacts:
+2026-08-27T04:11:13.6619051Z - agent (ID: 9632973263, Size: 312815, Expected Digest: sha256:a02b7dc0d147bd7c9a3fd6dd33c6faaa5397dff389614bb5731e95cc4058c2d4)
+2026-08-27T04:11:14.1059637Z Redirecting to blob download url: https://productionresultssa6.blob.core.windows.net/actions-results/dd00c5b2-37ff-4603-9f24-19bdef59813c/workflow-job-run-24b7204c-61ac-520e-872f-4636b5b9c424/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-08-27T04:11:14.1061626Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:11:14.3283238Z (node:3494) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:11:14.5179829Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:11:14.5181281Z SHA256 digest of downloaded artifact is a02b7dc0d147bd7c9a3fd6dd33c6faaa5397dff389614bb5731e95cc4058c2d4
+2026-08-27T04:11:14.5182204Z Artifact download completed successfully.
+2026-08-27T04:11:14.5182855Z Total of 1 artifact(s) downloaded
+2026-08-27T04:11:14.5184375Z Download artifact has finished successfully

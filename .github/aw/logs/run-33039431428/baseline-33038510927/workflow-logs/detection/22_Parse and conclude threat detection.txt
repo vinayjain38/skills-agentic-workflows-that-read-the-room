@@ -1,0 +1,69 @@
+﻿2026-08-27T04:12:33.7390774Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:12:33.7391203Z with:
+2026-08-27T04:12:33.7394238Z   script: try {
+  const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+  setupGlobals(core, github, context, exec, io, getOctokit);
+  const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_threat_detection_results.cjs');
+  await main();
+} catch (loadErr) {
+  const continueOnError = process.env.GH_AW_DETECTION_CONTINUE_ON_ERROR !== 'false';
+  const detectionExecutionFailed = process.env.DETECTION_AGENTIC_EXECUTION_OUTCOME === 'failure';
+  const msg = 'ERR_SYSTEM: \u274C Unexpected error loading threat detection module: ' + (loadErr && loadErr.message ? loadErr.message : String(loadErr));
+  core.error(msg);
+  core.setOutput('reason', 'parse_error');
+  if (continueOnError && !detectionExecutionFailed) {
+    core.warning('\u26A0\uFE0F ' + msg);
+    core.setOutput('conclusion', 'warning');
+    core.setOutput('success', 'false');
+  } else {
+    core.setOutput('conclusion', 'failure');
+    core.setOutput('success', 'false');
+    core.setFailed(msg);
+  }
+}
+
+2026-08-27T04:12:33.7399435Z   github-token: ***
+2026-08-27T04:12:33.7399684Z   debug: false
+2026-08-27T04:12:33.7399928Z   user-agent: actions/github-script
+2026-08-27T04:12:33.7400224Z   result-encoding: json
+2026-08-27T04:12:33.7400472Z   retries: 0
+2026-08-27T04:12:33.7400733Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:12:33.7401037Z env:
+2026-08-27T04:12:33.7401260Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:12:33.7401567Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:12:33.7401941Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:12:33.7402260Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:12:33.7402612Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:12:33.7402971Z   GH_AW_PRIMARY_MODEL: gpt-4o-2024-11-20
+2026-08-27T04:12:33.7403261Z   GH_AW_AIC: 1.964
+2026-08-27T04:12:33.7403497Z   GH_AW_AMBIENT_CONTEXT: 14162
+2026-08-27T04:12:33.7403765Z   RUN_DETECTION: true
+2026-08-27T04:12:33.7404027Z   DETECTION_AGENTIC_EXECUTION_OUTCOME: success
+2026-08-27T04:12:33.7404341Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-08-27T04:12:33.7404769Z ##[endgroup]
+2026-08-27T04:12:33.8370962Z ════════════════════════════════════════════════════════
+2026-08-27T04:12:33.8372330Z 🛡️  Threat Detection: Parse Results & Conclude
+2026-08-27T04:12:33.8373060Z ════════════════════════════════════════════════════════
+2026-08-27T04:12:33.8374341Z 📋 RUN_DETECTION env: "true"
+2026-08-27T04:12:33.8375107Z 📋 continue-on-error: true
+2026-08-27T04:12:33.8375901Z 📋 detection execution outcome: "success"
+2026-08-27T04:12:33.8376713Z 📁 Threat detection directory: /tmp/gh-aw/threat-detection
+2026-08-27T04:12:33.8377590Z 📄 Detection log path: /tmp/gh-aw/threat-detection/detection.log
+2026-08-27T04:12:33.8378654Z 📄 Structured result path: /tmp/gh-aw/threat-detection/detection_result.json
+2026-08-27T04:12:33.8379641Z 🔍 Detection is required. Proceeding to parse detection result...
+2026-08-27T04:12:33.8380870Z 🔎 Checking for structured result file: /tmp/gh-aw/threat-detection/detection_result.json
+2026-08-27T04:12:33.8382021Z ℹ️  No structured result file found. Falling back to detection log parsing.
+2026-08-27T04:12:33.8382778Z ✔️  Detection log file exists: /tmp/gh-aw/threat-detection/detection.log
+2026-08-27T04:12:33.8383660Z 📊 Detection log stats: 144 lines, 9598 bytes
+2026-08-27T04:12:33.8385157Z 📄 Lines containing THREAT_DETECTION_RESULT (1 of 144):
+2026-08-27T04:12:33.8386321Z    [105] THREAT_DETECTION_RESULT:{"prompt_injection":false,"secret_leak":false,"malicious_patch":false,"reasons":[]}
+2026-08-27T04:12:33.8387485Z 🔎 Parsing THREAT_DETECTION_RESULT from detection log...
+2026-08-27T04:12:33.8388117Z 📋 Threat detection verdict:
+2026-08-27T04:12:33.8388577Z    prompt_injection : false
+2026-08-27T04:12:33.8388986Z    secret_leak      : false
+2026-08-27T04:12:33.8389393Z    malicious_patch  : false
+2026-08-27T04:12:33.8390340Z    reasons          : (none)
+2026-08-27T04:12:33.8390981Z ✅ No security threats detected. Safe outputs may proceed.
+2026-08-27T04:12:33.8394759Z ════════════════════════════════════════════════════════
+2026-08-27T04:12:33.8395459Z 🛡️  Threat detection conclusion complete.
+2026-08-27T04:12:33.8396101Z ════════════════════════════════════════════════════════

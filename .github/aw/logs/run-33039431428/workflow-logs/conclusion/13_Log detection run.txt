@@ -1,0 +1,30 @@
+﻿2026-08-27T04:37:18.9888498Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:18.9889991Z with:
+2026-08-27T04:37:18.9899263Z   github-token: ***
+2026-08-27T04:37:18.9901981Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_detection_runs.cjs');
+await main();
+
+2026-08-27T04:37:18.9914468Z   debug: false
+2026-08-27T04:37:18.9915191Z   user-agent: actions/github-script
+2026-08-27T04:37:18.9916768Z   result-encoding: json
+2026-08-27T04:37:18.9917684Z   retries: 0
+2026-08-27T04:37:18.9918344Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:18.9919354Z env:
+2026-08-27T04:37:18.9919897Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:18.9921973Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:18.9923004Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:18.9923966Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:18.9924846Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:18.9925740Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:18.9928639Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:18.9931461Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:18.9933817Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-27T04:37:18.9934611Z   GH_AW_DETECTION_REASON: 
+2026-08-27T04:37:18.9935527Z ##[endgroup]
+2026-08-27T04:37:19.1820381Z Detection conclusion: skipped
+2026-08-27T04:37:19.1825333Z Detection reason: 
+2026-08-27T04:37:19.1826876Z Workflow name: update-github-info
+2026-08-27T04:37:19.1829199Z Run URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:19.1832056Z Detection conclusion is "skipped", no issue comment needed

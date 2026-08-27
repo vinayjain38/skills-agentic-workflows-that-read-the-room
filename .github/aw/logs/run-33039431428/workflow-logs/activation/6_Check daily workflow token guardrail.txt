@@ -1,0 +1,28 @@
+﻿2026-08-27T04:27:27.9031451Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:27:27.9033185Z with:
+2026-08-27T04:27:27.9041611Z   github-token: ***
+2026-08-27T04:27:27.9045329Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_daily_aic_workflow_guardrail.cjs');
+await main();
+
+2026-08-27T04:27:27.9049455Z   debug: false
+2026-08-27T04:27:27.9050407Z   user-agent: actions/github-script
+2026-08-27T04:27:27.9051543Z   result-encoding: json
+2026-08-27T04:27:27.9052499Z   retries: 0
+2026-08-27T04:27:27.9053477Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:27:27.9076998Z env:
+2026-08-27T04:27:27.9077981Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-27T04:27:27.9079138Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:27:27.9081142Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:27:27.9082745Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: cc02120371b4ce0b
+2026-08-27T04:27:27.9084039Z   GITHUB_AW_OTEL_JOB_START_MS: 1787804842908
+2026-08-27T04:27:27.9087831Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:27:27.9091323Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:27:27.9097895Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:27:27.9102904Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-08-27T04:27:27.9104108Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-08-27T04:27:27.9105203Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-08-27T04:27:27.9115162Z   GH_AW_GITHUB_TOKEN: ***
+2026-08-27T04:27:27.9116197Z ##[endgroup]
+2026-08-27T04:27:28.8750502Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.

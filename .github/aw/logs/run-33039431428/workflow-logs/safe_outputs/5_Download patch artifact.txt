@@ -1,0 +1,39 @@
+﻿2026-08-27T04:36:55.8583843Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:36:55.8584702Z with:
+2026-08-27T04:36:55.8585114Z   name: agent
+2026-08-27T04:36:55.8585553Z   path: /tmp/gh-aw/
+2026-08-27T04:36:55.8586011Z   merge-multiple: false
+2026-08-27T04:36:55.8586796Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:36:55.8587526Z   run-id: 33039431428
+2026-08-27T04:36:55.8588012Z   skip-decompress: false
+2026-08-27T04:36:55.8588500Z   digest-mismatch: error
+2026-08-27T04:36:55.8588958Z env:
+2026-08-27T04:36:55.8589368Z   GH_AW_AGENT_AIC: 28.653
+2026-08-27T04:36:55.8590154Z   GH_AW_AIC: 28.653
+2026-08-27T04:36:55.8590624Z   GH_AW_AMBIENT_CONTEXT: 22395
+2026-08-27T04:36:55.8591509Z   GH_AW_CALLER_WORKFLOW_ID: vinayjain38/skills-agentic-workflows-that-read-the-room/update-github-info
+2026-08-27T04:36:55.8592467Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-27T04:36:55.8593009Z   GH_AW_DETECTION_REASON: 
+2026-08-27T04:36:55.8593495Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-27T04:36:55.8594943Z   GH_AW_ENGINE_ID: copilot
+2026-08-27T04:36:55.8595485Z   GH_AW_ENGINE_MODEL: gpt-4o
+2026-08-27T04:36:55.8596003Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:36:55.8596498Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-27T04:36:55.8597035Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:36:55.8597618Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:36:55.8598849Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:36:55.8632060Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:36:55.8636547Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 359acb43a183c4c3
+2026-08-27T04:36:55.8638005Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805414704
+2026-08-27T04:36:55.8639914Z ##[endgroup]
+2026-08-27T04:36:56.1702120Z Downloading single artifact
+2026-08-27T04:36:56.6583881Z (node:1416) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:36:56.6635651Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:36:56.8413139Z Preparing to download the following artifacts:
+2026-08-27T04:36:56.8414371Z - agent (ID: 9633434547, Size: 948467, Expected Digest: sha256:9db7293b331bd25f67661cb9231dec6a65cbc7103c965de7292a19b4bfafc07f)
+2026-08-27T04:36:56.8422879Z Redirecting to blob download url: https://productionresultssa10.blob.core.windows.net/actions-results/b63cd5c3-b60e-4e73-b007-21dad5462ac4/workflow-job-run-cac1dc34-2e19-525b-b8d1-cceb16ef5de2/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-08-27T04:36:56.8424993Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:36:56.8427400Z SHA256 digest of downloaded artifact is 9db7293b331bd25f67661cb9231dec6a65cbc7103c965de7292a19b4bfafc07f
+2026-08-27T04:36:56.8428490Z Artifact download completed successfully.
+2026-08-27T04:36:56.8429138Z Total of 1 artifact(s) downloaded
+2026-08-27T04:36:56.8430029Z Download artifact has finished successfully

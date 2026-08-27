@@ -1,0 +1,45 @@
+﻿2026-08-27T04:10:56.7434478Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:10:56.7434913Z with:
+2026-08-27T04:10:56.7435868Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_token_usage.cjs');
+await main();
+
+2026-08-27T04:10:56.7439348Z   github-token: ***
+2026-08-27T04:10:56.7439582Z   debug: false
+2026-08-27T04:10:56.7439814Z   user-agent: actions/github-script
+2026-08-27T04:10:56.7440106Z   result-encoding: json
+2026-08-27T04:10:56.7440332Z   retries: 0
+2026-08-27T04:10:56.7440568Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:10:56.7440872Z env:
+2026-08-27T04:10:56.7441071Z   DEFAULT_BRANCH: main
+2026-08-27T04:10:56.7441310Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:10:56.7441574Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:10:56.7441802Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:10:56.7442092Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:10:56.7442445Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:10:56.7443004Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:10:56.7443420Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:10:56.7443792Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 53609065d5d06e70
+2026-08-27T04:10:56.7444132Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803776313
+2026-08-27T04:10:56.7444461Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:10:56.7444764Z   GH_AW_AIC: 13.383
+2026-08-27T04:10:56.7444997Z   GH_AW_AMBIENT_CONTEXT: 22391
+2026-08-27T04:10:56.7445244Z ##[endgroup]
+2026-08-27T04:10:56.8475319Z Parsing token usage from 1 file(s): /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl (2715 bytes)
+2026-08-27T04:10:56.8630298Z Token Usage
+2026-08-27T04:10:56.8630650Z 
+2026-08-27T04:10:56.8631484Z # | Alias | Input | Output | Cache Read | Cache Write | ΔAI Credits | AI Credits | Duration 
+2026-08-27T04:10:56.8632101Z 
+2026-08-27T04:10:56.8632364Z  1 | gpt40 | 22,391 | 202 | 0 | 0 | 5.8 | 5.8 | 6.3s 
+2026-08-27T04:10:56.8633306Z  2 | gpt40 | 348 | 87 | 22,528 | 0 | 2.9 | 8.7 | 3.2s 
+2026-08-27T04:10:56.8633940Z  3 | gpt40 | 5,604 | 109 | 22,912 | 0 | 2.97 | 11.7 | 4.0s 
+2026-08-27T04:10:56.8634584Z  4 | gpt40 | 101 | 118 | 28,544 | 0 | 3.69 | 15.4 | 3.6s 
+2026-08-27T04:10:56.8635201Z  5 | gpt40 | 107 | 35 | 28,672 | 0 | 3.62 | 19 | 2.3s 
+2026-08-27T04:10:56.8635790Z  Total |  | 28,551 | 551 | 102,656 | 0 |  | 13.4 | 19.4s 
+2026-08-27T04:10:56.8636200Z 
+2026-08-27T04:10:56.8637549Z Legend: `Alias` shows the model shorthand used in the table. `ΔAI Credits` is the per-request cost, and `AI Credits` is the running total computed with the current AI credits pricing model.
+2026-08-27T04:10:56.8639049Z Token usage summary appended to step summary
+2026-08-27T04:10:56.8640948Z Primary model: gpt-4o-2024-11-20
+2026-08-27T04:10:56.8642403Z AI Credits: 13.383
+2026-08-27T04:10:56.8643950Z Ambient context: 22391

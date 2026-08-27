@@ -1,0 +1,570 @@
+﻿2026-08-27T04:37:06.3310676Z Current runner version: '2.336.0'
+2026-08-27T04:37:06.3344313Z ##[group]Runner Image Provisioner
+2026-08-27T04:37:06.3345672Z Hosted Compute Agent
+2026-08-27T04:37:06.3349201Z Version: 20260707.563
+2026-08-27T04:37:06.3350200Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-08-27T04:37:06.3350939Z Build Date: 2026-07-07T19:33:50Z
+2026-08-27T04:37:06.3351875Z Worker ID: {02e64e87-ca94-4ffe-849c-0c6cce7c19aa}
+2026-08-27T04:37:06.3352641Z Azure Region: centralus
+2026-08-27T04:37:06.3353219Z ##[endgroup]
+2026-08-27T04:37:06.3354802Z ##[group]VM Image
+2026-08-27T04:37:06.3356689Z - OS: Linux (x64)
+2026-08-27T04:37:06.3357293Z - Source: Docker
+2026-08-27T04:37:06.3358206Z - Name: ubuntu:24.04
+2026-08-27T04:37:06.3359096Z - Version: 20260728.2.1
+2026-08-27T04:37:06.3359645Z ##[endgroup]
+2026-08-27T04:37:06.3361310Z ##[group]GITHUB_TOKEN Permissions
+2026-08-27T04:37:06.3365896Z Actions: read
+2026-08-27T04:37:06.3366606Z Contents: write
+2026-08-27T04:37:06.3367186Z Issues: write
+2026-08-27T04:37:06.3367984Z Metadata: read
+2026-08-27T04:37:06.3368772Z PullRequests: write
+2026-08-27T04:37:06.3369662Z ##[endgroup]
+2026-08-27T04:37:06.3371966Z Secret source: Actions
+2026-08-27T04:37:06.3373556Z Prepare workflow directory
+2026-08-27T04:37:06.4325376Z Prepare all required actions
+2026-08-27T04:37:06.4514707Z Getting action download info
+2026-08-27T04:37:06.9846125Z Download action repository 'github/gh-aw-actions@6aab9e5b5c91c615506061f09bedd81a23babe3c' (SHA:6aab9e5b5c91c615506061f09bedd81a23babe3c)
+2026-08-27T04:37:08.0285333Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-08-27T04:37:08.4531633Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-08-27T04:37:08.5967704Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-08-27T04:37:08.9313587Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-08-27T04:37:09.5951034Z Complete job name: conclusion
+2026-08-27T04:37:09.7149521Z ##[group]Run github/gh-aw-actions/setup@6aab9e5b5c91c615506061f09bedd81a23babe3c
+2026-08-27T04:37:09.7150756Z with:
+2026-08-27T04:37:09.7151268Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-08-27T04:37:09.7151881Z   job-name: conclusion
+2026-08-27T04:37:09.7152372Z   trace-id: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:09.7152940Z   parent-span-id: cc02120371b4ce0b
+2026-08-27T04:37:09.7153466Z   safe-output-artifact-client: false
+2026-08-27T04:37:09.7154138Z env:
+2026-08-27T04:37:09.7154542Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:09.7155086Z   GH_AW_SETUP_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:09.7156329Z   GH_AW_CURRENT_WORKFLOW_REF: vinayjain38/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-08-27T04:37:09.7157534Z   GH_AW_INFO_VERSION: 1.0.79
+2026-08-27T04:37:09.7158021Z   GH_AW_INFO_AWF_VERSION: v0.27.44
+2026-08-27T04:37:09.7158537Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-08-27T04:37:09.7159359Z ##[endgroup]
+2026-08-27T04:37:12.2344634Z Successfully copied 462 files to /home/runner/work/_temp/gh-aw/actions
+2026-08-27T04:37:12.4640532Z Successfully copied 26 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-08-27T04:37:12.5691770Z Successfully copied 85 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-08-27T04:37:12.5996738Z [info] [otlp] INPUT_TRACE_ID=fa0242ce274396c512be2bea926d7cc9 (will reuse activation trace)
+2026-08-27T04:37:12.6012398Z [info] [otlp] INPUT_PARENT_SPAN_ID=cc02120371b4ce0b (will parent setup span)
+2026-08-27T04:37:12.6018155Z [info] [otlp] GH_AW_OTLP_ENDPOINTS not set, skipping setup span
+2026-08-27T04:37:12.6080001Z [info] [otlp] resolved trace-id=fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:12.6089403Z [info] [otlp] trace-id=fa0242ce274396c512be2bea926d7cc9 written to GITHUB_OUTPUT
+2026-08-27T04:37:12.6099730Z [info] [otlp] span-id=b4cec59628571783 written to GITHUB_OUTPUT
+2026-08-27T04:37:12.6114320Z [info] [otlp] parent-span-id=cc02120371b4ce0b written to GITHUB_OUTPUT
+2026-08-27T04:37:12.6126468Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-08-27T04:37:12.6132406Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-08-27T04:37:12.6145605Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-08-27T04:37:12.6394029Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:37:12.6394825Z with:
+2026-08-27T04:37:12.6395219Z   name: agent
+2026-08-27T04:37:12.6395639Z   path: /tmp/gh-aw/
+2026-08-27T04:37:12.6396088Z   merge-multiple: false
+2026-08-27T04:37:12.6396724Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:37:12.6397425Z   run-id: 33039431428
+2026-08-27T04:37:12.6397871Z   skip-decompress: false
+2026-08-27T04:37:12.6398350Z   digest-mismatch: error
+2026-08-27T04:37:12.6398783Z env:
+2026-08-27T04:37:12.6399470Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:12.6400033Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:12.6400720Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:12.6401330Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:12.6401863Z ##[endgroup]
+2026-08-27T04:37:12.8594038Z Downloading single artifact
+2026-08-27T04:37:13.0559770Z Preparing to download the following artifacts:
+2026-08-27T04:37:13.0567263Z - agent (ID: 9633434547, Size: 948467, Expected Digest: sha256:9db7293b331bd25f67661cb9231dec6a65cbc7103c965de7292a19b4bfafc07f)
+2026-08-27T04:37:13.3711228Z Redirecting to blob download url: https://productionresultssa10.blob.core.windows.net/actions-results/b63cd5c3-b60e-4e73-b007-21dad5462ac4/workflow-job-run-cac1dc34-2e19-525b-b8d1-cceb16ef5de2/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-08-27T04:37:13.3715070Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:37:13.5738663Z (node:1400) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:37:13.5740813Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:37:13.8196467Z SHA256 digest of downloaded artifact is 9db7293b331bd25f67661cb9231dec6a65cbc7103c965de7292a19b4bfafc07f
+2026-08-27T04:37:13.8201598Z Artifact download completed successfully.
+2026-08-27T04:37:13.8205327Z Total of 1 artifact(s) downloaded
+2026-08-27T04:37:13.8213877Z Download artifact has finished successfully
+2026-08-27T04:37:13.8361854Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-08-27T04:37:13.8362522Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-08-27T04:37:13.8363131Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-08-27T04:37:13.8364381Z [36;1mecho "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-08-27T04:37:13.8375186Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:37:13.8376004Z env:
+2026-08-27T04:37:13.8376429Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:13.8377051Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:13.8378107Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:13.8378750Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:13.8379589Z ##[endgroup]
+2026-08-27T04:37:13.8471459Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-08-27T04:37:13.8472350Z /tmp/gh-aw/mcp-logs/tools.json
+2026-08-27T04:37:13.8517200Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-08-27T04:37:13.8517806Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-08-27T04:37:13.8518461Z /tmp/gh-aw/mcp-logs/safeoutputs/server.log
+2026-08-27T04:37:13.8519325Z /tmp/gh-aw/mcp-logs/github.log
+2026-08-27T04:37:13.8520227Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-08-27T04:37:13.8520801Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-08-27T04:37:13.8521354Z /tmp/gh-aw/pre-agent-audit.txt
+2026-08-27T04:37:13.8522063Z /tmp/gh-aw/agent-stdio.log
+2026-08-27T04:37:13.8522555Z /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:13.8523049Z /tmp/gh-aw/otel.jsonl
+2026-08-27T04:37:13.8523820Z /tmp/gh-aw/awf-config.json
+2026-08-27T04:37:13.8524331Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:37:13.8524864Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-08-27T04:37:13.8525394Z /tmp/gh-aw/agent_usage.json
+2026-08-27T04:37:13.8525913Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-08-27T04:37:13.8526522Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-08-27T04:37:13.8527299Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-08-27T04:37:13.8528379Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:13.8531578Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-08-27T04:37:13.8532713Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-08-27T04:37:13.8533450Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-08-27T04:37:13.8534146Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-08-27T04:37:13.8534847Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-08-27T04:37:13.8535604Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-08-27T04:37:13.8536351Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-08-27T04:37:13.8537303Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-08-27T04:37:13.8537994Z /tmp/gh-aw/sandbox/agent/logs/process-1787805128135-1282.log
+2026-08-27T04:37:13.8538748Z /tmp/gh-aw/sandbox/agent/logs/process-1787805253344-2092.log
+2026-08-27T04:37:13.8539673Z /tmp/gh-aw/sandbox/agent/logs/process-1787804949145-110.log
+2026-08-27T04:37:13.8540463Z /tmp/gh-aw/sandbox/agent/logs/process-1787805008301-507.log
+2026-08-27T04:37:13.8634571Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-08-27T04:37:13.8635370Z with:
+2026-08-27T04:37:13.8635789Z   name: safe-outputs-items
+2026-08-27T04:37:13.8636289Z   path: /tmp/gh-aw/
+2026-08-27T04:37:13.8636750Z   merge-multiple: false
+2026-08-27T04:37:13.8637724Z   repository: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:37:13.8638447Z   run-id: 33039431428
+2026-08-27T04:37:13.8639231Z   skip-decompress: false
+2026-08-27T04:37:13.8639717Z   digest-mismatch: error
+2026-08-27T04:37:13.8640216Z env:
+2026-08-27T04:37:13.8640624Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:13.8641206Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:13.8642190Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:13.8642824Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:13.8643371Z ##[endgroup]
+2026-08-27T04:37:14.5514150Z Downloading single artifact
+2026-08-27T04:37:14.5516907Z Preparing to download the following artifacts:
+2026-08-27T04:37:14.5518073Z - safe-outputs-items (ID: 9633453099, Size: 162, Expected Digest: sha256:acec6bf037a8259f01509b659b3d88d23407478f46097548916e8298b232eb1e)
+2026-08-27T04:37:14.5525585Z Redirecting to blob download url: https://productionresultssa10.blob.core.windows.net/actions-results/b63cd5c3-b60e-4e73-b007-21dad5462ac4/workflow-job-run-d0e939c1-25d7-5fa9-be83-b213aaca8bcf/artifacts/140086647422da92f7ddc36c3ae296f3ebb1dfa20d074a5f6305bad1022cc591.zip
+2026-08-27T04:37:14.5527737Z Starting download of artifact to: /tmp/gh-aw
+2026-08-27T04:37:14.6166196Z (node:1417) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-08-27T04:37:14.6168031Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-27T04:37:14.6231980Z SHA256 digest of downloaded artifact is acec6bf037a8259f01509b659b3d88d23407478f46097548916e8298b232eb1e
+2026-08-27T04:37:14.6235494Z Artifact download completed successfully.
+2026-08-27T04:37:14.6240038Z Total of 1 artifact(s) downloaded
+2026-08-27T04:37:14.6250710Z Download artifact has finished successfully
+2026-08-27T04:37:14.6444907Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/collect_usage_artifact_files.sh"
+2026-08-27T04:37:14.6446127Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/collect_usage_artifact_files.sh"[0m
+2026-08-27T04:37:14.6452369Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:37:14.6452900Z env:
+2026-08-27T04:37:14.6453334Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:14.6453963Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:14.6455058Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:14.6455722Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:14.6456292Z ##[endgroup]
+2026-08-27T04:37:14.6543692Z Usage artifact source file status:
+2026-08-27T04:37:14.6567961Z MISSING: /tmp/gh-aw/aw_info.json
+2026-08-27T04:37:14.6568618Z MISSING: /tmp/gh-aw/aw-info.jsonl
+2026-08-27T04:37:14.6569489Z FOUND: /tmp/gh-aw/agent_usage.json
+2026-08-27T04:37:14.6570071Z MISSING: /tmp/gh-aw/agent_usage.jsonl
+2026-08-27T04:37:14.6570715Z MISSING: /tmp/gh-aw/detection_usage.jsonl
+2026-08-27T04:37:14.6571346Z MISSING: /tmp/gh-aw/evals/evals.jsonl
+2026-08-27T04:37:14.6571931Z FOUND: /tmp/gh-aw/github_rate_limits.jsonl
+2026-08-27T04:37:14.6572555Z FOUND: /tmp/gh-aw/safe-output-items.jsonl
+2026-08-27T04:37:14.6573371Z MISSING: /tmp/gh-aw/sandbox/firewall-audit-logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.6574372Z FOUND: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.6575344Z MISSING: /tmp/gh-aw/sandbox/firewall/audit/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.6576454Z MISSING: /tmp/gh-aw/threat-detection/sandbox/firewall-audit-logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.6577660Z MISSING: /tmp/gh-aw/threat-detection/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.6578821Z MISSING: /tmp/gh-aw/threat-detection/sandbox/firewall/audit/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:37:14.7216388Z [info] safe-output-items manifest: 0 item(s) logged (file present but contained no loggable items)
+2026-08-27T04:37:14.7225240Z [info] /tmp/gh-aw/usage/activity/summary.json
+2026-08-27T04:37:14.7342401Z /tmp/gh-aw/usage/activity/summary.json
+2026-08-27T04:37:14.7345734Z /tmp/gh-aw/usage/agent/token_usage.jsonl
+2026-08-27T04:37:14.7350573Z /tmp/gh-aw/usage/agent_usage.json
+2026-08-27T04:37:14.7351386Z /tmp/gh-aw/usage/detection/token_usage.jsonl
+2026-08-27T04:37:14.7352173Z /tmp/gh-aw/usage/github_rate_limits.jsonl
+2026-08-27T04:37:14.7467775Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:37:14.7468574Z with:
+2026-08-27T04:37:14.7469367Z   name: usage
+2026-08-27T04:37:14.7471732Z   path: /tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-08-27T04:37:14.7474667Z   if-no-files-found: ignore
+2026-08-27T04:37:14.7475195Z   compression-level: 6
+2026-08-27T04:37:14.7475740Z   overwrite: false
+2026-08-27T04:37:14.7476213Z   include-hidden-files: false
+2026-08-27T04:37:14.7476713Z   archive: true
+2026-08-27T04:37:14.7477126Z env:
+2026-08-27T04:37:14.7477550Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:14.7478173Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:14.7479076Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:14.7479718Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:14.7480272Z ##[endgroup]
+2026-08-27T04:37:15.0599217Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-08-27T04:37:15.0684433Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-08-27T04:37:15.0712647Z With the provided path, there will be 5 files uploaded
+2026-08-27T04:37:15.0720014Z Artifact name is valid!
+2026-08-27T04:37:15.0731880Z Root directory input is valid!
+2026-08-27T04:37:15.3580809Z Uploading artifact: usage.zip
+2026-08-27T04:37:15.3642107Z Beginning upload of artifact content to blob storage
+2026-08-27T04:37:15.6468516Z Uploaded bytes 2342
+2026-08-27T04:37:15.6900594Z Finished uploading artifact content to blob storage!
+2026-08-27T04:37:15.6906862Z SHA256 digest of uploaded artifact is 9e50d99db39499456e2d1e69487ce73345d569eec7d64964fd3997fb19ccc225
+2026-08-27T04:37:15.6911065Z Finalizing artifact upload
+2026-08-27T04:37:16.0394013Z Artifact usage successfully finalized. Artifact ID 9633458208
+2026-08-27T04:37:16.0395153Z Artifact usage has been successfully uploaded! Final size is 2342 bytes. Artifact ID is 9633458208
+2026-08-27T04:37:16.0396748Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428/artifacts/9633458208
+2026-08-27T04:37:16.0506377Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-08-27T04:37:16.0507189Z with:
+2026-08-27T04:37:16.0507743Z   key: agentic-workflow-usage-updategithubinfo-33039431428
+2026-08-27T04:37:16.0508564Z   restore-keys: agentic-workflow-usage-updategithubinfo-
+2026-08-27T04:37:16.0509675Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:37:16.0510347Z   enableCrossOsArchive: false
+2026-08-27T04:37:16.0510888Z   fail-on-cache-miss: false
+2026-08-27T04:37:16.0511399Z   lookup-only: false
+2026-08-27T04:37:16.0511852Z env:
+2026-08-27T04:37:16.0512288Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:16.0512891Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:16.0513612Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:16.0514257Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:16.0514839Z ##[endgroup]
+2026-08-27T04:37:16.3552009Z Cache hit for restore-key: agentic-workflow-usage-updategithubinfo-33038510927
+2026-08-27T04:37:16.6600124Z Received 345 of 345 (100.0%), 0.0 MBs/sec
+2026-08-27T04:37:16.6641686Z Cache Size: ~0 MB (345 B)
+2026-08-27T04:37:16.6758501Z [command]/usr/bin/tar -xf /home/runner/work/_temp/77e2a8ef-4e3b-426a-9be0-0d5e9aa54d77/cache.tzst -P -C /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room --use-compress-program unzstd
+2026-08-27T04:37:16.6972513Z Cache restored successfully
+2026-08-27T04:37:16.7255411Z Cache restored from key: agentic-workflow-usage-updategithubinfo-33038510927
+2026-08-27T04:37:16.7493078Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:16.7494871Z with:
+2026-08-27T04:37:16.7506044Z   github-token: ***
+2026-08-27T04:37:16.7510275Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/write_daily_aic_usage_cache.cjs');
+await main();
+
+2026-08-27T04:37:16.7514509Z   debug: false
+2026-08-27T04:37:16.7515519Z   user-agent: actions/github-script
+2026-08-27T04:37:16.7516768Z   result-encoding: json
+2026-08-27T04:37:16.7517819Z   retries: 0
+2026-08-27T04:37:16.7519046Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:16.7520420Z env:
+2026-08-27T04:37:16.7521340Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:16.7522685Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:16.7524313Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:16.7525808Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:16.7527112Z ##[endgroup]
+2026-08-27T04:37:16.9432849Z [daily-aic-cache] Scanning usage JSONL files: {"dir":"/tmp/gh-aw/usage","count":3,"files":["/tmp/gh-aw/usage/github_rate_limits.jsonl","/tmp/gh-aw/usage/agent/token_usage.jsonl","/tmp/gh-aw/usage/detection/token_usage.jsonl"]}
+2026-08-27T04:37:16.9472306Z [daily-aic-cache] Computed AIC for current run: {"runId":33039431428,"aic":47.3055}
+2026-08-27T04:37:16.9479482Z [daily-aic-cache] Loaded existing cache entries: {"path":"/tmp/gh-aw/agentic-workflow-usage-cache.jsonl","total":5,"kept":5,"pruned":0}
+2026-08-27T04:37:16.9510438Z [daily-aic-cache] Wrote cache entry: {"runId":33039431428,"aic":47.3055,"path":"/tmp/gh-aw/agentic-workflow-usage-cache.jsonl"}
+2026-08-27T04:37:16.9716251Z ##[group]Run actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-08-27T04:37:16.9717898Z with:
+2026-08-27T04:37:16.9719284Z   key: agentic-workflow-usage-updategithubinfo-33039431428
+2026-08-27T04:37:16.9722164Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:37:16.9723698Z   enableCrossOsArchive: false
+2026-08-27T04:37:16.9724778Z env:
+2026-08-27T04:37:16.9726035Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:16.9727282Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:16.9728788Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:16.9730788Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:16.9731985Z ##[endgroup]
+2026-08-27T04:37:17.1476326Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room --files-from manifest.txt --use-compress-program zstdmt
+2026-08-27T04:37:17.5016284Z Sent 357 of 357 (100.0%), 0.0 MBs/sec
+2026-08-27T04:37:17.7092931Z Cache saved with key: agentic-workflow-usage-updategithubinfo-33039431428
+2026-08-27T04:37:17.7266210Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:37:17.7267857Z with:
+2026-08-27T04:37:17.7268743Z   name: aic-usage-cache
+2026-08-27T04:37:17.7270205Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:37:17.7271554Z   if-no-files-found: ignore
+2026-08-27T04:37:17.7272625Z   retention-days: 7
+2026-08-27T04:37:17.7273596Z   compression-level: 6
+2026-08-27T04:37:17.7274587Z   overwrite: false
+2026-08-27T04:37:17.7275554Z   include-hidden-files: false
+2026-08-27T04:37:17.7276617Z   archive: true
+2026-08-27T04:37:17.7277499Z env:
+2026-08-27T04:37:17.7278375Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:17.7279922Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:17.7281403Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:17.7282733Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:17.7283909Z ##[endgroup]
+2026-08-27T04:37:17.9086853Z With the provided path, there will be 1 file uploaded
+2026-08-27T04:37:17.9099629Z Artifact name is valid!
+2026-08-27T04:37:17.9103989Z Root directory input is valid!
+2026-08-27T04:37:18.1980595Z Uploading artifact: aic-usage-cache.zip
+2026-08-27T04:37:18.2045132Z Beginning upload of artifact content to blob storage
+2026-08-27T04:37:18.3727706Z Uploaded bytes 341
+2026-08-27T04:37:18.4088228Z Finished uploading artifact content to blob storage!
+2026-08-27T04:37:18.4095324Z SHA256 digest of uploaded artifact is 9709baa20ee0b9e3bf60cbdb7ceb9aeedf4949f2d46167853c2179a4e2a9ec8e
+2026-08-27T04:37:18.4100495Z Finalizing artifact upload
+2026-08-27T04:37:18.7217038Z Artifact aic-usage-cache successfully finalized. Artifact ID 9633459026
+2026-08-27T04:37:18.7230388Z Artifact aic-usage-cache has been successfully uploaded! Final size is 341 bytes. Artifact ID is 9633459026
+2026-08-27T04:37:18.7234063Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428/artifacts/9633459026
+2026-08-27T04:37:18.7551916Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:18.7553569Z with:
+2026-08-27T04:37:18.7572185Z   github-token: ***
+2026-08-27T04:37:18.7576574Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_noop_message.cjs');
+await main();
+
+2026-08-27T04:37:18.7620889Z   debug: false
+2026-08-27T04:37:18.7621972Z   user-agent: actions/github-script
+2026-08-27T04:37:18.7623229Z   result-encoding: json
+2026-08-27T04:37:18.7624379Z   retries: 0
+2026-08-27T04:37:18.7625759Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:18.7627054Z env:
+2026-08-27T04:37:18.7627972Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:18.7629438Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:18.7631706Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:18.7633117Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:18.7634501Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:18.7635811Z   GH_AW_NOOP_MAX: 1
+2026-08-27T04:37:18.7636866Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:18.7639746Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:18.7643465Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:18.7645692Z   GH_AW_AGENT_CONCLUSION: failure
+2026-08-27T04:37:18.7646973Z   GH_AW_NOOP_REPORT_AS_ISSUE: false
+2026-08-27T04:37:18.7648343Z   GH_AW_AIC: 28.653
+2026-08-27T04:37:18.7650141Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-27T04:37:18.7651471Z   GH_AW_AMBIENT_CONTEXT: 22395
+2026-08-27T04:37:18.7652833Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:37:18.7654221Z ##[endgroup]
+2026-08-27T04:37:18.9602585Z Agent output content length: 24
+2026-08-27T04:37:18.9607834Z No noop items found in agent output
+2026-08-27T04:37:18.9888537Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:18.9889999Z with:
+2026-08-27T04:37:18.9899272Z   github-token: ***
+2026-08-27T04:37:18.9902000Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_detection_runs.cjs');
+await main();
+
+2026-08-27T04:37:18.9914502Z   debug: false
+2026-08-27T04:37:18.9915196Z   user-agent: actions/github-script
+2026-08-27T04:37:18.9916798Z   result-encoding: json
+2026-08-27T04:37:18.9917688Z   retries: 0
+2026-08-27T04:37:18.9918350Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:18.9919363Z env:
+2026-08-27T04:37:18.9919902Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:18.9921991Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:18.9923081Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:18.9923970Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:18.9924851Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:18.9925744Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:18.9928651Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:18.9931470Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:18.9933825Z   GH_AW_DETECTION_CONCLUSION: skipped
+2026-08-27T04:37:18.9934615Z   GH_AW_DETECTION_REASON: 
+2026-08-27T04:37:18.9935532Z ##[endgroup]
+2026-08-27T04:37:19.1820491Z Detection conclusion: skipped
+2026-08-27T04:37:19.1825374Z Detection reason: 
+2026-08-27T04:37:19.1826887Z Workflow name: update-github-info
+2026-08-27T04:37:19.1829606Z Run URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:19.1832066Z Detection conclusion is "skipped", no issue comment needed
+2026-08-27T04:37:19.2055375Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:19.2056433Z with:
+2026-08-27T04:37:19.2065429Z   github-token: ***
+2026-08-27T04:37:19.2068444Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/missing_tool.cjs');
+await main();
+
+2026-08-27T04:37:19.2071566Z   debug: false
+2026-08-27T04:37:19.2072165Z   user-agent: actions/github-script
+2026-08-27T04:37:19.2073203Z   result-encoding: json
+2026-08-27T04:37:19.2073805Z   retries: 0
+2026-08-27T04:37:19.2074428Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:19.2075511Z env:
+2026-08-27T04:37:19.2076777Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:19.2077691Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:19.2078672Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:19.2079823Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:19.2080703Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:19.2081556Z   GH_AW_MISSING_TOOL_CREATE_ISSUE: true
+2026-08-27T04:37:19.2084796Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:19.2086687Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:19.2088537Z ##[endgroup]
+2026-08-27T04:37:19.3524976Z Max count: unlimited
+2026-08-27T04:37:19.3772711Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:19.3773777Z with:
+2026-08-27T04:37:19.3781435Z   github-token: ***
+2026-08-27T04:37:19.3784028Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/report_incomplete_handler.cjs');
+await main();
+
+2026-08-27T04:37:19.3786736Z   debug: false
+2026-08-27T04:37:19.3787305Z   user-agent: actions/github-script
+2026-08-27T04:37:19.3788018Z   result-encoding: json
+2026-08-27T04:37:19.3788592Z   retries: 0
+2026-08-27T04:37:19.3789404Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:19.3790179Z env:
+2026-08-27T04:37:19.3790679Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:19.3791476Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:19.3792505Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:19.3793340Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:19.3794198Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:19.3795055Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-08-27T04:37:19.3795852Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:19.3797683Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:19.3799676Z ##[endgroup]
+2026-08-27T04:37:19.5140871Z Max count: unlimited
+2026-08-27T04:37:19.5421470Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:19.5422540Z with:
+2026-08-27T04:37:19.5430508Z   github-token: ***
+2026-08-27T04:37:19.5433285Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_agent_failure.cjs');
+await main();
+
+2026-08-27T04:37:19.5435959Z   debug: false
+2026-08-27T04:37:19.5436535Z   user-agent: actions/github-script
+2026-08-27T04:37:19.5437240Z   result-encoding: json
+2026-08-27T04:37:19.5437812Z   retries: 0
+2026-08-27T04:37:19.5438419Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:19.5439653Z env:
+2026-08-27T04:37:19.5440142Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:19.5440923Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:19.5441920Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:19.5442822Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:19.5443652Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:19.5444485Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:19.5446589Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:19.5449775Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:19.5451216Z   GH_AW_AGENT_CONCLUSION: failure
+2026-08-27T04:37:19.5451934Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:37:19.5452724Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 168
+2026-08-27T04:37:19.5453496Z   GH_AW_ENGINE_ID: copilot
+2026-08-27T04:37:19.5454430Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-08-27T04:37:19.5458622Z   GH_AW_ENGINE_SECRET_FAILURE_MESSAGE: **Alternative**: If your organization has a Copilot subscription, you can avoid the need for a personal access token by adding a top-level `permissions` block to your workflow file. This enables Copilot inference through the org using the built-in GitHub Actions token.
+
+```yaml
+permissions:
+  copilot-requests: write
+```
+
+See: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-08-27T04:37:19.5463223Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-08-27T04:37:19.5464977Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-27T04:37:19.5465665Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-08-27T04:37:19.5466419Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-08-27T04:37:19.5467558Z   GH_AW_AIC: 28.653
+2026-08-27T04:37:19.5468125Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-27T04:37:19.5468794Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-08-27T04:37:19.5469643Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-08-27T04:37:19.5470651Z   GH_AW_MCP_POLICY_ERROR: false
+2026-08-27T04:37:19.5471335Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-08-27T04:37:19.5472095Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: false
+2026-08-27T04:37:19.5472841Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-08-27T04:37:19.5474014Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-08-27T04:37:19.5475115Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-08-27T04:37:19.5476641Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-08-27T04:37:19.5480756Z   GH_AW_ENGINE_API_HOSTS: api.enterprise.githubcopilot.com,api.githubcopilot.com,api.business.githubcopilot.com,api.individual.githubcopilot.com
+2026-08-27T04:37:19.5483023Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-08-27T04:37:19.5483746Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 
+2026-08-27T04:37:19.5484459Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-08-27T04:37:19.5485187Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-08-27T04:37:19.5486084Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-08-27T04:37:19.5487254Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-08-27T04:37:19.5488076Z   GH_AW_DAILY_AI_CREDITS_TOTAL_EFFECTIVE_TOKENS: 
+2026-08-27T04:37:19.5489053Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-08-27T04:37:19.5490062Z   GH_AW_GROUP_REPORTS: false
+2026-08-27T04:37:19.5490749Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-08-27T04:37:19.5491519Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-08-27T04:37:19.5492316Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-08-27T04:37:19.5493511Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-08-27T04:37:19.5494116Z ##[endgroup]
+2026-08-27T04:37:19.7624940Z [ai-credits] aiCredits source=env(GH_AW_AIC) value=28.653
+2026-08-27T04:37:19.7633850Z [ai-credits] maxAICredits source=env(GH_AW_MAX_AI_CREDITS) value=1000
+2026-08-27T04:37:19.7642222Z [ai-credits] rateLimitSignal source=none
+2026-08-27T04:37:19.7658543Z Agent conclusion: failure
+2026-08-27T04:37:19.7662044Z Workflow name: update-github-info
+2026-08-27T04:37:19.7665640Z Workflow ID: update-github-info
+2026-08-27T04:37:19.7669774Z Secret verification result: success
+2026-08-27T04:37:19.7674151Z Engine secret failure message: (set)
+2026-08-27T04:37:19.7683056Z Assignment error count: 0
+2026-08-27T04:37:19.7699975Z Assign copilot failure count: 0
+2026-08-27T04:37:19.7704120Z Skill install failure count: 0
+2026-08-27T04:37:19.7708084Z Create discussion error count: 0
+2026-08-27T04:37:19.7715417Z Code push failure count: 0
+2026-08-27T04:37:19.7718360Z Checkout PR success: true
+2026-08-27T04:37:19.7720147Z AI credits: 28.653
+2026-08-27T04:37:19.7721468Z Configured max AI credits: 1000
+2026-08-27T04:37:19.7723341Z AI credits rate-limit error: false
+2026-08-27T04:37:19.7725786Z Max AI credits exceeded (harness budget abort): false
+2026-08-27T04:37:19.7727899Z Daily workflow AIC guardrail exceeded: false
+2026-08-27T04:37:19.7744194Z Inference access error: false
+2026-08-27T04:37:19.7744923Z MCP policy error: false
+2026-08-27T04:37:19.7745563Z Agentic engine timeout: false
+2026-08-27T04:37:19.7746268Z Model not supported error: false
+2026-08-27T04:37:19.7746985Z HTTP 400 response error: false
+2026-08-27T04:37:19.7749444Z Unknown model AI credits error: false
+2026-08-27T04:37:19.7750423Z Unknown model AI credits sources (audit/output): false/false
+2026-08-27T04:37:19.7753280Z Missing model pricing error: false (model: (unknown))
+2026-08-27T04:37:19.7756684Z Push repo-memory result: 
+2026-08-27T04:37:19.7759551Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-08-27T04:37:19.7762015Z Lockdown check failed: false
+2026-08-27T04:37:19.7762718Z OAuth token check failed: false
+2026-08-27T04:37:19.7763439Z Stale lock file check failed: false
+2026-08-27T04:37:19.7764155Z Cache memory enabled: false
+2026-08-27T04:37:19.7764918Z Cache memory restored (from restore outputs): false
+2026-08-27T04:37:19.7765868Z Missing tool report-as-failure: true
+2026-08-27T04:37:19.7766624Z Missing data report-as-failure: true
+2026-08-27T04:37:19.7825881Z Agent output content length: 24
+2026-08-27T04:37:19.8000787Z Searching for pull request from branch: main
+2026-08-27T04:37:20.1451280Z No pull request found for branch: main
+2026-08-27T04:37:20.1736790Z Parent issue creation is disabled (group-reports: false)
+2026-08-27T04:37:20.1813364Z Checking for existing issue with precise failure metadata for title: "[aw] update-github-info hit engine rate limit (HTTP 429)"
+2026-08-27T04:37:20.4861364Z No existing issue found, creating a new one
+2026-08-27T04:37:20.6840252Z Detected engine HTTP 429/rate-limit signal — using dedicated context message
+2026-08-27T04:37:20.6863779Z Generating failure issue footer with aiCredits context: 28.653
+2026-08-27T04:37:21.0660194Z [@octokit/request] "POST https://api.github.com/repos/vinayjain38/skills-agentic-workflows-that-read-the-room/issues" is deprecated. It is scheduled to be removed on Fri, 10 Mar 2028 00:00:00 GMT. See https://docs.github.com/en/rest/about-the-rest-api/api-versions
+2026-08-27T04:37:21.0688672Z ✓ Created new issue #11: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/issues/11
+2026-08-27T04:37:21.3816878Z Cascade check: 2 failure issue(s) in the last 60 min (threshold: 10) — no cascade
+2026-08-27T04:37:21.4037204Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:21.4038231Z with:
+2026-08-27T04:37:21.4047559Z   github-token: ***
+2026-08-27T04:37:21.4050715Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/report_failed_jobs.cjs');
+await main();
+
+2026-08-27T04:37:21.4053318Z   debug: false
+2026-08-27T04:37:21.4053884Z   user-agent: actions/github-script
+2026-08-27T04:37:21.4055048Z   result-encoding: json
+2026-08-27T04:37:21.4055624Z   retries: 0
+2026-08-27T04:37:21.4056227Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:21.4057060Z env:
+2026-08-27T04:37:21.4057563Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:21.4058354Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:21.4060076Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:21.4060903Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:21.4061729Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:21.4142528Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:21.4145125Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:21.4147614Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:21.4150113Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-08-27T04:37:21.4150785Z ##[endgroup]
+2026-08-27T04:37:21.6024203Z Checking GitHub API rate limit before querying jobs
+2026-08-27T04:37:21.8312209Z Querying jobs for workflow run 33039431428
+2026-08-27T04:37:22.1052872Z Page 1: retrieved 5 jobs
+2026-08-27T04:37:22.1056728Z Skipping builtin job: agent (already reported by agent failure handler)
+2026-08-27T04:37:22.1060583Z Checking GitHub API rate limit after querying jobs
+2026-08-27T04:37:22.2226559Z No failed non-builtin jobs found, skipping issue creation
+2026-08-27T04:37:22.2511376Z Post job cleanup.
+2026-08-27T04:37:22.3034111Z [info] [otlp] GH_AW_OTLP_ENDPOINTS not set, skipping OTLP export (will attempt JSONL mirror)
+2026-08-27T04:37:22.3274434Z Cleaning up /tmp/gh-aw...
+2026-08-27T04:37:22.3540953Z Cleaned up /tmp/gh-aw
+2026-08-27T04:37:22.3681654Z No /tmp/awf-*-chroot-home directories found
+2026-08-27T04:37:22.3842642Z No /tmp/awf-chroot-* directories found
+2026-08-27T04:37:22.3970323Z Evaluate and set job outputs
+2026-08-27T04:37:22.3979614Z Cleaning up orphan processes

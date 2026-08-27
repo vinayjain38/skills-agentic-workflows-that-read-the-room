@@ -1,0 +1,13 @@
+{"timestamp":"2026-08-27T04:27:35.310Z","source":"response_headers","operation":"repos.getContent","resource":"core","limit":5000,"remaining":4984,"used":16,"reset":"2026-08-27T04:50:20.000Z"}
+{"timestamp":"2026-08-27T04:27:35.647Z","source":"response_headers","operation":"repos.getContent","resource":"core","limit":5000,"remaining":4983,"used":17,"reset":"2026-08-27T04:50:20.000Z"}
+{"timestamp":"2026-08-27T04:28:42.065Z","source":"retry","operation":"MCP gateway health check","attempt":1,"delay_ms":500}
+{"timestamp":"2026-08-27T04:28:42.605Z","source":"retry","operation":"MCP gateway health check","attempt":2,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:43.607Z","source":"retry","operation":"MCP gateway health check","attempt":3,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:44.611Z","source":"retry","operation":"MCP gateway health check","attempt":4,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:45.613Z","source":"retry","operation":"MCP gateway health check","attempt":5,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:46.614Z","source":"retry","operation":"MCP gateway health check","attempt":6,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:47.617Z","source":"retry","operation":"MCP gateway health check","attempt":7,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:48.620Z","source":"retry","operation":"MCP gateway health check","attempt":8,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:49.622Z","source":"retry","operation":"MCP gateway health check","attempt":9,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:28:50.625Z","source":"retry","operation":"MCP gateway health check","attempt":10,"delay_ms":1000}
+{"timestamp":"2026-08-27T04:35:52.686Z","source":"response_headers","operation":"repos.listCollaborators","resource":"core","limit":5000,"remaining":4968,"used":32,"reset":"2026-08-27T04:50:20.000Z"}

@@ -1,0 +1,31 @@
+﻿2026-08-27T04:12:32.6077166Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:12:32.6077574Z with:
+2026-08-27T04:12:32.6077779Z   name: detection
+2026-08-27T04:12:32.6078038Z   path: /tmp/gh-aw/threat-detection/detection.log
+2026-08-27T04:12:32.6078354Z   if-no-files-found: ignore
+2026-08-27T04:12:32.6078600Z   compression-level: 6
+2026-08-27T04:12:32.6078820Z   overwrite: false
+2026-08-27T04:12:32.6079052Z   include-hidden-files: false
+2026-08-27T04:12:32.6079294Z   archive: true
+2026-08-27T04:12:32.6079494Z env:
+2026-08-27T04:12:32.6079712Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:12:32.6080002Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:12:32.6080347Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:12:32.6080651Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:12:32.6080954Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:12:32.6081269Z   GH_AW_PRIMARY_MODEL: gpt-4o-2024-11-20
+2026-08-27T04:12:32.6081534Z   GH_AW_AIC: 1.964
+2026-08-27T04:12:32.6081783Z   GH_AW_AMBIENT_CONTEXT: 14162
+2026-08-27T04:12:32.6082016Z ##[endgroup]
+2026-08-27T04:12:32.7445800Z With the provided path, there will be 1 file uploaded
+2026-08-27T04:12:32.7458330Z Artifact name is valid!
+2026-08-27T04:12:32.7475806Z Root directory input is valid!
+2026-08-27T04:12:33.0773787Z Uploading artifact: detection.zip
+2026-08-27T04:12:33.0809595Z Beginning upload of artifact content to blob storage
+2026-08-27T04:12:33.3271003Z Uploaded bytes 3455
+2026-08-27T04:12:33.3837645Z Finished uploading artifact content to blob storage!
+2026-08-27T04:12:33.3839154Z SHA256 digest of uploaded artifact is b2d2fd7fe2e1fb645b88ffc05ab1497f90b24060967ca3caad4fab4907b06bdf
+2026-08-27T04:12:33.3839978Z Finalizing artifact upload
+2026-08-27T04:12:33.7278496Z Artifact detection successfully finalized. Artifact ID 9633003499
+2026-08-27T04:12:33.7279577Z Artifact detection has been successfully uploaded! Final size is 3455 bytes. Artifact ID is 9633003499
+2026-08-27T04:12:33.7282967Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33038510927/artifacts/9633003499

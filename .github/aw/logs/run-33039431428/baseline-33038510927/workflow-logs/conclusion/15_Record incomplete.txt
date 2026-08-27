@@ -1,0 +1,24 @@
+﻿2026-08-27T04:13:10.6654095Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:13:10.6654775Z with:
+2026-08-27T04:13:10.6657915Z   github-token: ***
+2026-08-27T04:13:10.6659863Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/report_incomplete_handler.cjs');
+await main();
+
+2026-08-27T04:13:10.6661376Z   debug: false
+2026-08-27T04:13:10.6661775Z   user-agent: actions/github-script
+2026-08-27T04:13:10.6662235Z   result-encoding: json
+2026-08-27T04:13:10.6662633Z   retries: 0
+2026-08-27T04:13:10.6663314Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:13:10.6663825Z env:
+2026-08-27T04:13:10.6664196Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:13:10.6664707Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:13:10.6665296Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: dc385e130c6e8550
+2026-08-27T04:13:10.6665868Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803982002
+2026-08-27T04:13:10.6666412Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:13:10.6666945Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-08-27T04:13:10.6667459Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:13:10.6669104Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:13:10.6670094Z ##[endgroup]
+2026-08-27T04:13:10.8969576Z Max count: unlimited

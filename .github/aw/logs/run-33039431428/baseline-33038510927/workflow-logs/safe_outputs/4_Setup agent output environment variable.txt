@@ -1,0 +1,57 @@
+﻿2026-08-27T04:12:46.3289629Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-08-27T04:12:46.3290358Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-08-27T04:12:46.3290957Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-08-27T04:12:46.3291796Z [36;1mecho "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-08-27T04:12:46.3300859Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:12:46.3301433Z env:
+2026-08-27T04:12:46.3301883Z   GH_AW_AGENT_AIC: 13.383
+2026-08-27T04:12:46.3302368Z   GH_AW_AIC: 13.383
+2026-08-27T04:12:46.3302832Z   GH_AW_AMBIENT_CONTEXT: 22391
+2026-08-27T04:12:46.3303733Z   GH_AW_CALLER_WORKFLOW_ID: vinayjain38/skills-agentic-workflows-that-read-the-room/update-github-info
+2026-08-27T04:12:46.3304678Z   GH_AW_DETECTION_CONCLUSION: success
+2026-08-27T04:12:46.3305233Z   GH_AW_DETECTION_REASON: 
+2026-08-27T04:12:46.3305727Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-27T04:12:46.3306218Z   GH_AW_ENGINE_ID: copilot
+2026-08-27T04:12:46.3308670Z   GH_AW_ENGINE_MODEL: gpt-4o
+2026-08-27T04:12:46.3309253Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:12:46.3309817Z   GH_AW_THREAT_DETECTION_AIC: 1.964
+2026-08-27T04:12:46.3310388Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:12:46.3310976Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:12:46.3312245Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:12:46.3314619Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:12:46.3317142Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ac0bf02bc8c76ccf
+2026-08-27T04:12:46.3317834Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803965696
+2026-08-27T04:12:46.3318402Z ##[endgroup]
+2026-08-27T04:12:46.3600479Z /tmp/gh-aw/agent/github-latest.html
+2026-08-27T04:12:46.3601178Z /tmp/gh-aw/agent/github-changelog.html
+2026-08-27T04:12:46.3601795Z /tmp/gh-aw/agent/copilot-workflows.html
+2026-08-27T04:12:46.3602393Z /tmp/gh-aw/agent-stdio.log
+2026-08-27T04:12:46.3602930Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-08-27T04:12:46.3603487Z /tmp/gh-aw/mcp-logs/tools.json
+2026-08-27T04:12:46.3604045Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-08-27T04:12:46.3604573Z /tmp/gh-aw/mcp-logs/github.log
+2026-08-27T04:12:46.3605161Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-08-27T04:12:46.3606958Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-08-27T04:12:46.3607627Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-08-27T04:12:46.3608228Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-08-27T04:12:46.3608850Z /tmp/gh-aw/mcp-logs/safeoutputs/server.log
+2026-08-27T04:12:46.3609454Z /tmp/gh-aw/agent_output.json
+2026-08-27T04:12:46.3609960Z /tmp/gh-aw/otel.jsonl
+2026-08-27T04:12:46.3610543Z /tmp/gh-aw/sandbox/agent/logs/process-1787803829857-113.log
+2026-08-27T04:12:46.3611242Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-08-27T04:12:46.3611965Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-08-27T04:12:46.3614424Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-08-27T04:12:46.3615353Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-08-27T04:12:46.3616187Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:12:46.3617189Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-08-27T04:12:46.3617813Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-08-27T04:12:46.3618426Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-08-27T04:12:46.3619096Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-08-27T04:12:46.3620003Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-08-27T04:12:46.3620687Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-08-27T04:12:46.3621468Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-08-27T04:12:46.3622149Z /tmp/gh-aw/awf-config.json
+2026-08-27T04:12:46.3622783Z /tmp/gh-aw/safeoutputs.jsonl
+2026-08-27T04:12:46.3623330Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:12:46.3623877Z /tmp/gh-aw/pre-agent-audit.txt
+2026-08-27T04:12:46.3625309Z /tmp/gh-aw/agent_usage.json

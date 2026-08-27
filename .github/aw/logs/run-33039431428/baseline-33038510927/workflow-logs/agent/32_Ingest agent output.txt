@@ -1,0 +1,54 @@
+﻿2026-08-27T04:10:55.2588843Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:10:55.2589577Z with:
+2026-08-27T04:10:55.2591288Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/collect_ndjson_output.cjs');
+await main();
+
+2026-08-27T04:10:55.2598638Z   github-token: ***
+2026-08-27T04:10:55.2599071Z   debug: false
+2026-08-27T04:10:55.2599486Z   user-agent: actions/github-script
+2026-08-27T04:10:55.2600001Z   result-encoding: json
+2026-08-27T04:10:55.2600455Z   retries: 0
+2026-08-27T04:10:55.2600899Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:10:55.2601463Z env:
+2026-08-27T04:10:55.2601831Z   DEFAULT_BRANCH: main
+2026-08-27T04:10:55.2602304Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:10:55.2603103Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:10:55.2603570Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:10:55.2604169Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:10:55.2604787Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:10:55.2605361Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:10:55.2606046Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:10:55.2606736Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 53609065d5d06e70
+2026-08-27T04:10:55.2607340Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803776313
+2026-08-27T04:10:55.2608117Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:10:55.2612366Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,awesome-copilot.github.com,github.blog,github.com,host.docker.internal,raw.githubusercontent.com,registry.npmjs.org,telemetry.enterprise.githubcopilot.com
+2026-08-27T04:10:55.2616772Z   GITHUB_SERVER_URL: https://github.com
+2026-08-27T04:10:55.2617355Z   GITHUB_API_URL: https://api.github.com
+2026-08-27T04:10:55.2617881Z ##[endgroup]
+2026-08-27T04:10:55.3697662Z Loaded validation config from /home/runner/work/_temp/gh-aw/safeoutputs/validation.json
+2026-08-27T04:10:55.3705102Z Found 1 unique mentions in text
+2026-08-27T04:10:55.7048322Z Cached 1 recent collaborators for optimistic resolution
+2026-08-27T04:10:55.7049155Z Resolved 0 mentions via individual API calls
+2026-08-27T04:10:55.7049810Z Total allowed mentions: 1
+2026-08-27T04:10:55.7050322Z [OUTPUT COLLECTOR] Allowed mentions: vinayjain38
+2026-08-27T04:10:55.7051131Z [INGESTION] Reading config from: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+2026-08-27T04:10:55.7058022Z [INGESTION] Raw config content: {"create_pull_request":{"draft":true,"labels":["automation"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","CHANGELOG.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md"],"protected_files_policy":"request_review","title_prefix":"[github-info] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"false"},"report_incomplete":{}}
+2026-08-27T04:10:55.7064640Z 
+2026-08-27T04:10:55.7065471Z [INGESTION] Parsed config keys: ["create_pull_request","create_report_incomplete_issue","missing_data","missing_tool","noop","report_incomplete"]
+2026-08-27T04:10:55.7066892Z [INGESTION] Output file path: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:10:55.7067729Z Raw output content length: 189
+2026-08-27T04:10:55.7069605Z [INGESTION] First 500 chars of output: {"integrity":"high","message":"No updates were found in the GitHub Blog, Changelog, or Copilot Workflows sources. No changes were made to github-info.md.","secrecy":"public","type":"noop"}
+2026-08-27T04:10:55.7071093Z 
+2026-08-27T04:10:55.7071393Z [INGESTION] Normalizing config keys (dash -> underscore)
+2026-08-27T04:10:55.7074903Z [INGESTION] Expected output types after normalization: ["create_pull_request","create_report_incomplete_issue","missing_data","missing_tool","noop","report_incomplete"]
+2026-08-27T04:10:55.7082223Z [INGESTION] Expected output types full config: {"create_pull_request":{"draft":true,"labels":["automation"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","CHANGELOG.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md"],"protected_files_policy":"request_review","title_prefix":"[github-info] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"false"},"report_incomplete":{}}
+2026-08-27T04:10:55.7090248Z [INGESTION] Processing line 1: {"integrity":"high","message":"No updates were found in the GitHub Blog, Changelog, or Copilot Workflows sources. No changes were made to github-info.md.","secrecy":"public","type":"noop"}...
+2026-08-27T04:10:55.7092247Z [INGESTION] Line 1: Original type='noop', Normalized type='noop'
+2026-08-27T04:10:55.7093107Z Line 1: type 'noop'
+2026-08-27T04:10:55.7095894Z Line 1: Valid noop item
+2026-08-27T04:10:55.7096366Z Successfully parsed 1 valid output items
+2026-08-27T04:10:55.7098018Z Stored validated output to: /tmp/gh-aw/agent_output.json
+2026-08-27T04:10:55.7107881Z output_types: noop
+2026-08-27T04:10:55.7109514Z No patch or bundle files found in: /tmp/gh-aw

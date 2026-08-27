@@ -1,0 +1,28 @@
+﻿2026-08-27T04:37:17.7266178Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:37:17.7267849Z with:
+2026-08-27T04:37:17.7268736Z   name: aic-usage-cache
+2026-08-27T04:37:17.7270194Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:37:17.7271548Z   if-no-files-found: ignore
+2026-08-27T04:37:17.7272618Z   retention-days: 7
+2026-08-27T04:37:17.7273590Z   compression-level: 6
+2026-08-27T04:37:17.7274582Z   overwrite: false
+2026-08-27T04:37:17.7275549Z   include-hidden-files: false
+2026-08-27T04:37:17.7276613Z   archive: true
+2026-08-27T04:37:17.7277494Z env:
+2026-08-27T04:37:17.7278369Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:17.7279911Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:17.7281396Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:17.7282727Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:17.7283904Z ##[endgroup]
+2026-08-27T04:37:17.9086619Z With the provided path, there will be 1 file uploaded
+2026-08-27T04:37:17.9099581Z Artifact name is valid!
+2026-08-27T04:37:17.9103965Z Root directory input is valid!
+2026-08-27T04:37:18.1980539Z Uploading artifact: aic-usage-cache.zip
+2026-08-27T04:37:18.2045082Z Beginning upload of artifact content to blob storage
+2026-08-27T04:37:18.3727580Z Uploaded bytes 341
+2026-08-27T04:37:18.4088142Z Finished uploading artifact content to blob storage!
+2026-08-27T04:37:18.4095294Z SHA256 digest of uploaded artifact is 9709baa20ee0b9e3bf60cbdb7ceb9aeedf4949f2d46167853c2179a4e2a9ec8e
+2026-08-27T04:37:18.4100476Z Finalizing artifact upload
+2026-08-27T04:37:18.7216933Z Artifact aic-usage-cache successfully finalized. Artifact ID 9633459026
+2026-08-27T04:37:18.7230309Z Artifact aic-usage-cache has been successfully uploaded! Final size is 341 bytes. Artifact ID is 9633459026
+2026-08-27T04:37:18.7234054Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428/artifacts/9633459026

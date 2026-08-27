@@ -1,0 +1,44 @@
+﻿2026-08-27T04:11:14.5300324Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-08-27T04:11:14.5300993Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-08-27T04:11:14.5301484Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-08-27T04:11:14.5302102Z [36;1mecho "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-08-27T04:11:14.5329569Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:11:14.5329954Z env:
+2026-08-27T04:11:14.5330277Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:11:14.5330724Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:11:14.5331157Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:11:14.5331617Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:11:14.5332016Z ##[endgroup]
+2026-08-27T04:11:14.5421853Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-08-27T04:11:14.5422496Z /tmp/gh-aw/otel.jsonl
+2026-08-27T04:11:14.5422970Z /tmp/gh-aw/agent_usage.json
+2026-08-27T04:11:14.5423837Z /tmp/gh-aw/safeoutputs.jsonl
+2026-08-27T04:11:14.5424678Z /tmp/gh-aw/pre-agent-audit.txt
+2026-08-27T04:11:14.5425345Z /tmp/gh-aw/mcp-logs/safeoutputs/server.log
+2026-08-27T04:11:14.5425852Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-08-27T04:11:14.5426451Z /tmp/gh-aw/mcp-logs/observed-url-domains.json
+2026-08-27T04:11:14.5427118Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-08-27T04:11:14.5427883Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-08-27T04:11:14.5428618Z /tmp/gh-aw/mcp-logs/tools.json
+2026-08-27T04:11:14.5429053Z /tmp/gh-aw/mcp-logs/github.log
+2026-08-27T04:11:14.5429422Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-08-27T04:11:14.5429833Z /tmp/gh-aw/agent_output.json
+2026-08-27T04:11:14.5430301Z /tmp/gh-aw/sandbox/firewall/audit/awf-resolved-config.json
+2026-08-27T04:11:14.5431164Z /tmp/gh-aw/sandbox/firewall/audit/policy-manifest.json
+2026-08-27T04:11:14.5431682Z /tmp/gh-aw/sandbox/firewall/audit/docker-compose.redacted.yml
+2026-08-27T04:11:14.5432171Z /tmp/gh-aw/sandbox/firewall/audit/squid.conf
+2026-08-27T04:11:14.5432586Z /tmp/gh-aw/sandbox/firewall/awf-reflect.json
+2026-08-27T04:11:14.5432969Z /tmp/gh-aw/sandbox/firewall/logs/cache.log
+2026-08-27T04:11:14.5433492Z /tmp/gh-aw/sandbox/firewall/logs/access.log
+2026-08-27T04:11:14.5434017Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-tracker-audit.jsonl
+2026-08-27T04:11:14.5434756Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/otel.jsonl
+2026-08-27T04:11:14.5435241Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/models.json
+2026-08-27T04:11:14.5435737Z /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+2026-08-27T04:11:14.5436218Z /tmp/gh-aw/sandbox/firewall/logs/audit.jsonl
+2026-08-27T04:11:14.5436688Z /tmp/gh-aw/sandbox/agent/logs/process-1787803829857-113.log
+2026-08-27T04:11:14.5437181Z /tmp/gh-aw/agent-stdio.log
+2026-08-27T04:11:14.5437715Z /tmp/gh-aw/awf-config.json
+2026-08-27T04:11:14.5438055Z /tmp/gh-aw/agent/copilot-workflows.html
+2026-08-27T04:11:14.5438496Z /tmp/gh-aw/agent/github-changelog.html
+2026-08-27T04:11:14.5438861Z /tmp/gh-aw/agent/github-latest.html
+2026-08-27T04:11:14.5439203Z /tmp/gh-aw/aw-prompts/prompt.txt

@@ -1,0 +1,23 @@
+﻿2026-08-27T04:37:16.7493040Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:16.7494864Z with:
+2026-08-27T04:37:16.7506036Z   github-token: ***
+2026-08-27T04:37:16.7510251Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/write_daily_aic_usage_cache.cjs');
+await main();
+
+2026-08-27T04:37:16.7514500Z   debug: false
+2026-08-27T04:37:16.7515512Z   user-agent: actions/github-script
+2026-08-27T04:37:16.7516760Z   result-encoding: json
+2026-08-27T04:37:16.7517813Z   retries: 0
+2026-08-27T04:37:16.7519043Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:16.7520404Z env:
+2026-08-27T04:37:16.7521335Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:16.7522678Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:16.7524308Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:16.7525766Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:16.7527106Z ##[endgroup]
+2026-08-27T04:37:16.9432713Z [daily-aic-cache] Scanning usage JSONL files: {"dir":"/tmp/gh-aw/usage","count":3,"files":["/tmp/gh-aw/usage/github_rate_limits.jsonl","/tmp/gh-aw/usage/agent/token_usage.jsonl","/tmp/gh-aw/usage/detection/token_usage.jsonl"]}
+2026-08-27T04:37:16.9472271Z [daily-aic-cache] Computed AIC for current run: {"runId":33039431428,"aic":47.3055}
+2026-08-27T04:37:16.9479449Z [daily-aic-cache] Loaded existing cache entries: {"path":"/tmp/gh-aw/agentic-workflow-usage-cache.jsonl","total":5,"kept":5,"pruned":0}
+2026-08-27T04:37:16.9510398Z [daily-aic-cache] Wrote cache entry: {"runId":33039431428,"aic":47.3055,"path":"/tmp/gh-aw/agentic-workflow-usage-cache.jsonl"}

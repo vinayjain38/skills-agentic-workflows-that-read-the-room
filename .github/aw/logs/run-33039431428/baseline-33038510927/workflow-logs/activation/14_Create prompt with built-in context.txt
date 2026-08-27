@@ -1,0 +1,73 @@
+﻿2026-08-27T04:09:22.1378558Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:09:22.1382492Z with:
+2026-08-27T04:09:22.1387446Z   script: const { setupGlobals } = require(process.env.GH_AW_ACTIONS_DIR + '/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(process.env.GH_AW_ACTIONS_DIR + '/create_prompt.cjs');
+await main(core);
+
+2026-08-27T04:09:22.1405667Z   github-token: ***
+2026-08-27T04:09:22.1408823Z   debug: false
+2026-08-27T04:09:22.1410030Z   user-agent: actions/github-script
+2026-08-27T04:09:22.1411399Z   result-encoding: json
+2026-08-27T04:09:22.1413833Z   retries: 0
+2026-08-27T04:09:22.1414932Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:09:22.1418340Z env:
+2026-08-27T04:09:22.1420403Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-27T04:09:22.1422174Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:09:22.1425996Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:09:22.1428476Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 61be3f22395d16ea
+2026-08-27T04:09:22.1473869Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803756497
+2026-08-27T04:09:22.1475400Z   GH_AW_ACTIONS_DIR: /home/runner/work/_temp/gh-aw/actions
+2026-08-27T04:09:22.1477032Z   GH_AW_PROMPT: /home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:09:22.1478888Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:09:22.1525817Z   GH_AW_PROMPT_CONFIG: {"items":[{"content_env":"GH_AW_PROMPT_CONTENT_0000"},{"file":"xpia.md"},{"file":"temp_folder_prompt.md"},{"file":"markdown.md"},{"file":"safe_outputs_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0001"},{"file":"safe_outputs_create_pull_request.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0002"},{"file":"mcp_cli_tools_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0003"},{"file":"github_mcp_tools_with_safeoutputs_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0004"},{"content_env":"GH_AW_PROMPT_CONTENT_0005"}]}
+2026-08-27T04:09:22.1532743Z   GH_AW_EXPR_1A3A194A: false
+2026-08-27T04:09:22.1533860Z   GH_AW_EXPR_463A214A: false
+2026-08-27T04:09:22.1534918Z   GH_AW_EXPR_802A9F6A: false
+2026-08-27T04:09:22.1536463Z   GH_AW_EXPR_FF1D34CE: 
+2026-08-27T04:09:22.1537862Z   GH_AW_GITHUB_ACTOR: vinayjain38
+2026-08-27T04:09:22.1539740Z   GH_AW_GITHUB_REPOSITORY: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:09:22.1543741Z   GH_AW_GITHUB_RUN_ID: 33038510927
+2026-08-27T04:09:22.1547386Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:09:22.1550120Z   GH_AW_PROMPT_CONTENT_0000: <system>
+
+2026-08-27T04:09:22.1552172Z   GH_AW_PROMPT_CONTENT_0001: <safe-output-tools>
+Tools: create_pull_request, missing_tool, missing_data, noop
+
+2026-08-27T04:09:22.1554356Z   GH_AW_PROMPT_CONTENT_0002: </safe-output-tools>
+
+2026-08-27T04:09:22.1573829Z   GH_AW_PROMPT_CONTENT_0003: <github-context>
+The following GitHub context information is available for this workflow:
+{{#if github.actor}}
+- **actor**: __GH_AW_GITHUB_ACTOR__
+{{/if}}
+{{#if github.repository}}
+- **repository**: __GH_AW_GITHUB_REPOSITORY__
+{{/if}}
+{{#if github.workspace}}
+- **workspace**: __GH_AW_GITHUB_WORKSPACE__
+{{/if}}
+{{#if github.event.issue.number || (github.aw.context.item_type == 'issue' && github.aw.context.item_number)}}
+- **issue-number**: #__GH_AW_EXPR_802A9F6A__
+{{/if}}
+{{#if github.event.discussion.number || (github.aw.context.item_type == 'discussion' && github.aw.context.item_number)}}
+- **discussion-number**: #__GH_AW_EXPR_1A3A194A__
+{{/if}}
+{{#if github.event.pull_request.number || (github.aw.context.item_type == 'pull_request' && github.aw.context.item_number)}}
+- **pull-request-number**: #__GH_AW_EXPR_463A214A__
+{{/if}}
+{{#if github.event.comment.id || github.aw.context.comment_id}}
+- **comment-id**: __GH_AW_EXPR_FF1D34CE__
+{{/if}}
+{{#if github.run_id}}
+- **workflow-run-id**: __GH_AW_GITHUB_RUN_ID__
+{{/if}}
+</github-context>
+
+
+2026-08-27T04:09:22.1597755Z   GH_AW_PROMPT_CONTENT_0004: </system>
+
+2026-08-27T04:09:22.1600976Z   GH_AW_PROMPT_CONTENT_0005: {{#runtime-import .github/workflows/update-github-info.md}}
+
+2026-08-27T04:09:22.1603067Z ##[endgroup]
+2026-08-27T04:09:22.4922321Z Created prompt at /home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt (11093 bytes)

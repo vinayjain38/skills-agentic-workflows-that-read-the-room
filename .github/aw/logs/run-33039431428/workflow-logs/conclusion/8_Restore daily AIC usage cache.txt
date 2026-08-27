@@ -1,0 +1,20 @@
+﻿2026-08-27T04:37:16.0506357Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-08-27T04:37:16.0507175Z with:
+2026-08-27T04:37:16.0507737Z   key: agentic-workflow-usage-updategithubinfo-33039431428
+2026-08-27T04:37:16.0508560Z   restore-keys: agentic-workflow-usage-updategithubinfo-
+2026-08-27T04:37:16.0509663Z   path: /tmp/gh-aw/agentic-workflow-usage-cache.jsonl
+2026-08-27T04:37:16.0510344Z   enableCrossOsArchive: false
+2026-08-27T04:37:16.0510884Z   fail-on-cache-miss: false
+2026-08-27T04:37:16.0511396Z   lookup-only: false
+2026-08-27T04:37:16.0511849Z env:
+2026-08-27T04:37:16.0512285Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:16.0512887Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:16.0513608Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:16.0514254Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:16.0514832Z ##[endgroup]
+2026-08-27T04:37:16.3551900Z Cache hit for restore-key: agentic-workflow-usage-updategithubinfo-33038510927
+2026-08-27T04:37:16.6600012Z Received 345 of 345 (100.0%), 0.0 MBs/sec
+2026-08-27T04:37:16.6641655Z Cache Size: ~0 MB (345 B)
+2026-08-27T04:37:16.6758446Z [command]/usr/bin/tar -xf /home/runner/work/_temp/77e2a8ef-4e3b-426a-9be0-0d5e9aa54d77/cache.tzst -P -C /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room --use-compress-program unzstd
+2026-08-27T04:37:16.6972421Z Cache restored successfully
+2026-08-27T04:37:16.7255315Z Cache restored from key: agentic-workflow-usage-updategithubinfo-33038510927

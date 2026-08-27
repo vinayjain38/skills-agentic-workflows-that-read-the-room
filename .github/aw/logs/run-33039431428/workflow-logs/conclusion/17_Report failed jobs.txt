@@ -1,0 +1,30 @@
+﻿2026-08-27T04:37:21.4037173Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:21.4038216Z with:
+2026-08-27T04:37:21.4047541Z   github-token: ***
+2026-08-27T04:37:21.4050688Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/report_failed_jobs.cjs');
+await main();
+
+2026-08-27T04:37:21.4053313Z   debug: false
+2026-08-27T04:37:21.4053878Z   user-agent: actions/github-script
+2026-08-27T04:37:21.4055041Z   result-encoding: json
+2026-08-27T04:37:21.4055618Z   retries: 0
+2026-08-27T04:37:21.4056222Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:21.4057052Z env:
+2026-08-27T04:37:21.4057556Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:21.4058339Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:21.4059996Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:21.4060898Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:21.4061723Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:21.4142486Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:21.4145109Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:21.4147604Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:21.4150097Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-08-27T04:37:21.4150780Z ##[endgroup]
+2026-08-27T04:37:21.6024117Z Checking GitHub API rate limit before querying jobs
+2026-08-27T04:37:21.8312103Z Querying jobs for workflow run 33039431428
+2026-08-27T04:37:22.1052765Z Page 1: retrieved 5 jobs
+2026-08-27T04:37:22.1056717Z Skipping builtin job: agent (already reported by agent failure handler)
+2026-08-27T04:37:22.1060502Z Checking GitHub API rate limit after querying jobs
+2026-08-27T04:37:22.2226452Z No failed non-builtin jobs found, skipping issue creation

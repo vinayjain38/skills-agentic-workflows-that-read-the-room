@@ -1,0 +1,42 @@
+﻿2026-08-27T04:35:52.2724704Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:35:52.2725125Z with:
+2026-08-27T04:35:52.2726063Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/collect_ndjson_output.cjs');
+await main();
+
+2026-08-27T04:35:52.2729766Z   github-token: ***
+2026-08-27T04:35:52.2730016Z   debug: false
+2026-08-27T04:35:52.2730242Z   user-agent: actions/github-script
+2026-08-27T04:35:52.2730522Z   result-encoding: json
+2026-08-27T04:35:52.2730756Z   retries: 0
+2026-08-27T04:35:52.2730992Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:35:52.2731296Z env:
+2026-08-27T04:35:52.2731486Z   DEFAULT_BRANCH: main
+2026-08-27T04:35:52.2731720Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:35:52.2731971Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:35:52.2732198Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:35:52.2732516Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:35:52.2732833Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:35:52.2733106Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:35:52.2733464Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:35:52.2734028Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ec11345c72d691fc
+2026-08-27T04:35:52.2734347Z   GITHUB_AW_OTEL_JOB_START_MS: 1787804873877
+2026-08-27T04:35:52.2734743Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:35:52.2736749Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,awesome-copilot.github.com,github.blog,github.com,host.docker.internal,raw.githubusercontent.com,registry.npmjs.org,telemetry.enterprise.githubcopilot.com
+2026-08-27T04:35:52.2739040Z   GITHUB_SERVER_URL: https://github.com
+2026-08-27T04:35:52.2739367Z   GITHUB_API_URL: https://api.github.com
+2026-08-27T04:35:52.2739657Z ##[endgroup]
+2026-08-27T04:35:52.3900557Z Loaded validation config from /home/runner/work/_temp/gh-aw/safeoutputs/validation.json
+2026-08-27T04:35:52.3907469Z Found 1 unique mentions in text
+2026-08-27T04:35:52.6873612Z Cached 1 recent collaborators for optimistic resolution
+2026-08-27T04:35:52.6874948Z Resolved 0 mentions via individual API calls
+2026-08-27T04:35:52.6875552Z Total allowed mentions: 1
+2026-08-27T04:35:52.6876240Z [OUTPUT COLLECTOR] Allowed mentions: vinayjain38
+2026-08-27T04:35:52.6877378Z [INGESTION] Reading config from: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+2026-08-27T04:35:52.6885558Z [INGESTION] Raw config content: {"create_pull_request":{"draft":true,"labels":["automation"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","CHANGELOG.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md"],"protected_files_policy":"request_review","title_prefix":"[github-info] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"false"},"report_incomplete":{}}
+2026-08-27T04:35:52.6893848Z 
+2026-08-27T04:35:52.6894462Z [INGESTION] Parsed config keys: ["create_pull_request","create_report_incomplete_issue","missing_data","missing_tool","noop","report_incomplete"]
+2026-08-27T04:35:52.6895273Z [INGESTION] Output file path: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:35:52.6896433Z Output file does not exist: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl — no safe-output items were emitted; treating as empty collection (graceful no-op)
+2026-08-27T04:35:52.6897499Z Stored empty collection to: /tmp/gh-aw/agent_output.json

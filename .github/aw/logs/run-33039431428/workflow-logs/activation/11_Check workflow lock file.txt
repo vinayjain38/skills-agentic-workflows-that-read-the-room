@@ -1,0 +1,36 @@
+﻿2026-08-27T04:27:33.8707149Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:27:33.8707836Z with:
+2026-08-27T04:27:33.8708911Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/check_workflow_timestamp_api.cjs');
+await main();
+
+2026-08-27T04:27:33.8713050Z   github-token: ***
+2026-08-27T04:27:33.8713362Z   debug: false
+2026-08-27T04:27:33.8713645Z   user-agent: actions/github-script
+2026-08-27T04:27:33.8713977Z   result-encoding: json
+2026-08-27T04:27:33.8714256Z   retries: 0
+2026-08-27T04:27:33.8714554Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:27:33.8714918Z env:
+2026-08-27T04:27:33.8715178Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-08-27T04:27:33.8715539Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:27:33.8715899Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:27:33.8716320Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: cc02120371b4ce0b
+2026-08-27T04:27:33.8716758Z   GITHUB_AW_OTEL_JOB_START_MS: 1787804842908
+2026-08-27T04:27:33.8717137Z   GH_AW_WORKFLOW_FILE: update-github-info.lock.yml
+2026-08-27T04:27:33.8717928Z   GH_AW_CONTEXT_WORKFLOW_REF: vinayjain38/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-08-27T04:27:33.8718764Z ##[endgroup]
+2026-08-27T04:27:34.4973294Z Checking for stale lock file using frontmatter hash:
+2026-08-27T04:27:34.4988016Z   Source: .github/workflows/update-github-info.md
+2026-08-27T04:27:34.4994091Z   Lock file: .github/workflows/update-github-info.lock.yml
+2026-08-27T04:27:34.5002678Z Env workflow ref already identifies this workflow, skipping referenced_workflows API lookup
+2026-08-27T04:27:34.5007287Z GITHUB_WORKFLOW_REF: vinayjain38/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-08-27T04:27:34.5105347Z GH_AW_CONTEXT_WORKFLOW_REF: vinayjain38/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main (available as env fallback)
+2026-08-27T04:27:34.5110043Z GITHUB_REPOSITORY: vinayjain38/skills-agentic-workflows-that-read-the-room
+2026-08-27T04:27:34.5113167Z Resolved source repo: vinayjain38/skills-agentic-workflows-that-read-the-room @ refs/heads/main
+2026-08-27T04:27:34.5114967Z Same-repo invocation: checking out vinayjain38/skills-agentic-workflows-that-read-the-room @ refs/heads/main
+2026-08-27T04:27:35.6580784Z Frontmatter hash comparison:
+2026-08-27T04:27:35.6598770Z   Lock file hash:    970e00a206632a834070a2132dfaab54d1077a69ec72ec0fcf644b9c98da0672
+2026-08-27T04:27:35.6609710Z   Recomputed hash:   970e00a206632a834070a2132dfaab54d1077a69ec72ec0fcf644b9c98da0672
+2026-08-27T04:27:35.6781367Z   Status: ✅ Hashes match
+2026-08-27T04:27:35.6822085Z ✅ Lock file is up to date (hashes match)

@@ -1,0 +1,13 @@
+﻿2026-08-27T04:11:32.2087697Z ##[group]Run mkdir -p /tmp/gh-aw/threat-detection
+2026-08-27T04:11:32.2088185Z [36;1mmkdir -p /tmp/gh-aw/threat-detection[0m
+2026-08-27T04:11:32.2088725Z [36;1mtouch /tmp/gh-aw/threat-detection/detection.log[0m
+2026-08-27T04:11:32.2089151Z [36;1mrm -f /tmp/gh-aw/step-summary.md[0m
+2026-08-27T04:11:32.2089537Z [36;1mtouch /tmp/gh-aw/step-summary.md[0m
+2026-08-27T04:11:32.2112892Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:11:32.2113332Z env:
+2026-08-27T04:11:32.2113681Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:11:32.2114174Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:11:32.2115163Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:11:32.2115629Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:11:32.2116295Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-08-27T04:11:32.2116766Z ##[endgroup]

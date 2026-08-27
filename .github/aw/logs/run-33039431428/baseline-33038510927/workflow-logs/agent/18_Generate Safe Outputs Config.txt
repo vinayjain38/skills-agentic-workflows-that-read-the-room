@@ -1,0 +1,20 @@
+﻿2026-08-27T04:10:06.2838973Z ##[group]Run mkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"
+2026-08-27T04:10:06.2839463Z [36;1mmkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"[0m
+2026-08-27T04:10:06.2839816Z [36;1mmkdir -p /tmp/gh-aw/safeoutputs[0m
+2026-08-27T04:10:06.2840137Z [36;1mmkdir -p /tmp/gh-aw/mcp-logs/safeoutputs[0m
+2026-08-27T04:10:06.2840674Z [36;1mcat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_d20ad44648318f04_EOF'[0m
+2026-08-27T04:10:06.2844548Z [36;1m{"create_pull_request":{"draft":true,"labels":["automation"],"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","CHANGELOG.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md"],"protected_files_policy":"request_review","title_prefix":"[github-info] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"false"},"report_incomplete":{}}[0m
+2026-08-27T04:10:06.2848042Z [36;1mGH_AW_SAFE_OUTPUTS_CONFIG_d20ad44648318f04_EOF[0m
+2026-08-27T04:10:06.2885558Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:10:06.2885824Z env:
+2026-08-27T04:10:06.2886030Z   DEFAULT_BRANCH: main
+2026-08-27T04:10:06.2886269Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:10:06.2886520Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:10:06.2886756Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:10:06.2887056Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:10:06.2887376Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:10:06.2887657Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:10:06.2888032Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:10:06.2888398Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 53609065d5d06e70
+2026-08-27T04:10:06.2888724Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803776313
+2026-08-27T04:10:06.2888996Z ##[endgroup]

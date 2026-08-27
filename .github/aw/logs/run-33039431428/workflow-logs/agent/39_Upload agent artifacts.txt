@@ -1,0 +1,54 @@
+﻿2026-08-27T04:35:54.1724780Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-08-27T04:35:54.1725546Z with:
+2026-08-27T04:35:54.1725874Z   name: agent
+2026-08-27T04:35:54.1728656Z   path: /tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/sandbox/agent/logs/
+/tmp/gh-aw/redacted-urls.log
+/tmp/gh-aw/mcp-logs/
+/tmp/gh-aw/agent_usage.json
+/tmp/gh-aw/agent-stdio.log
+/tmp/gh-aw/pre-agent-audit.txt
+/tmp/gh-aw/agent/
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/safeoutputs.jsonl
+/tmp/gh-aw/agent_output.json
+/tmp/gh-aw/aw-*.patch
+/tmp/gh-aw/aw-*.bundle
+/tmp/gh-aw/awf-config.json
+/tmp/gh-aw/sandbox/firewall/logs/
+/tmp/gh-aw/sandbox/firewall/audit/
+/tmp/gh-aw/sandbox/firewall/awf-reflect.json
+
+2026-08-27T04:35:54.1730526Z   if-no-files-found: ignore
+2026-08-27T04:35:54.1730778Z   compression-level: 6
+2026-08-27T04:35:54.1731002Z   overwrite: false
+2026-08-27T04:35:54.1731259Z   include-hidden-files: false
+2026-08-27T04:35:54.1731561Z   archive: true
+2026-08-27T04:35:54.1731831Z env:
+2026-08-27T04:35:54.1732046Z   DEFAULT_BRANCH: main
+2026-08-27T04:35:54.1732357Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:35:54.1732650Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:35:54.1732936Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:35:54.1733274Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:35:54.1733643Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:35:54.1733970Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:35:54.1734416Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:35:54.1734831Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: ec11345c72d691fc
+2026-08-27T04:35:54.1735145Z   GITHUB_AW_OTEL_JOB_START_MS: 1787804873877
+2026-08-27T04:35:54.1735829Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:35:54.1736436Z   GH_AW_AIC: 28.653
+2026-08-27T04:35:54.1736802Z   GH_AW_AMBIENT_CONTEXT: 22395
+2026-08-27T04:35:54.1737269Z   GH_AW_PRIMARY_MODEL: gpt-4o-2024-11-20
+2026-08-27T04:35:54.1737982Z ##[endgroup]
+2026-08-27T04:35:54.3411843Z With the provided path, there will be 31 files uploaded
+2026-08-27T04:35:54.3416819Z Artifact name is valid!
+2026-08-27T04:35:54.3417837Z Root directory input is valid!
+2026-08-27T04:35:54.7436398Z Uploading artifact: agent.zip
+2026-08-27T04:35:54.7475664Z Beginning upload of artifact content to blob storage
+2026-08-27T04:35:55.6300623Z Uploaded bytes 948467
+2026-08-27T04:35:55.7091368Z Finished uploading artifact content to blob storage!
+2026-08-27T04:35:55.7092553Z SHA256 digest of uploaded artifact is 9db7293b331bd25f67661cb9231dec6a65cbc7103c965de7292a19b4bfafc07f
+2026-08-27T04:35:55.7094094Z Finalizing artifact upload
+2026-08-27T04:35:56.2981172Z Artifact agent successfully finalized. Artifact ID 9633434547
+2026-08-27T04:35:56.2982421Z Artifact agent has been successfully uploaded! Final size is 948467 bytes. Artifact ID is 9633434547
+2026-08-27T04:35:56.2985459Z Artifact download URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428/artifacts/9633434547

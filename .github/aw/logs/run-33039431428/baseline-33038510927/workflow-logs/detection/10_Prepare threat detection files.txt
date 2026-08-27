@@ -1,0 +1,15 @@
+﻿2026-08-27T04:11:32.0777929Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"
+2026-08-27T04:11:32.0778592Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/prepare_threat_detection_files.sh"[0m
+2026-08-27T04:11:32.0797660Z shell: /usr/bin/bash -e {0}
+2026-08-27T04:11:32.0798047Z env:
+2026-08-27T04:11:32.0798387Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:11:32.0798786Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:11:32.0799271Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: e5083d3c9f938b95
+2026-08-27T04:11:32.0799700Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803873283
+2026-08-27T04:11:32.0800089Z ##[endgroup]
+2026-08-27T04:11:32.0892346Z Prepared threat detection files:
+2026-08-27T04:11:32.0902519Z total 16
+2026-08-27T04:11:32.0903149Z drwxr-xr-x 3 runner runner 4096 Aug 27 04:11 .
+2026-08-27T04:11:32.0903928Z drwxr-xr-x 7 runner runner 4096 Aug 27 04:11 ..
+2026-08-27T04:11:32.0904705Z -rw-r--r-- 1 runner runner  174 Aug 27 04:11 agent_output.json
+2026-08-27T04:11:32.0905433Z drwxr-xr-x 2 runner runner 4096 Aug 27 04:11 aw-prompts

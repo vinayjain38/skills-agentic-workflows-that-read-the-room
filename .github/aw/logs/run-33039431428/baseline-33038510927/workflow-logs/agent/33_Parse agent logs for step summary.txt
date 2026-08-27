@@ -1,0 +1,59 @@
+﻿2026-08-27T04:10:55.7391817Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:10:55.7392255Z with:
+2026-08-27T04:10:55.7393597Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/parse_copilot_log.cjs');
+await main();
+
+2026-08-27T04:10:55.7397217Z   github-token: ***
+2026-08-27T04:10:55.7411117Z   debug: false
+2026-08-27T04:10:55.7411389Z   user-agent: actions/github-script
+2026-08-27T04:10:55.7411700Z   result-encoding: json
+2026-08-27T04:10:55.7411943Z   retries: 0
+2026-08-27T04:10:55.7412208Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:10:55.7412553Z env:
+2026-08-27T04:10:55.7413021Z   DEFAULT_BRANCH: main
+2026-08-27T04:10:55.7413273Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-08-27T04:10:55.7413535Z   GH_AW_ASSETS_BRANCH: 
+2026-08-27T04:10:55.7413768Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-08-27T04:10:55.7414075Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-08-27T04:10:55.7414447Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:10:55.7414739Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-08-27T04:10:55.7415115Z   GITHUB_AW_OTEL_TRACE_ID: 1edd690e6ae0fd57152ffb03d2ba3a0d
+2026-08-27T04:10:55.7415487Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 53609065d5d06e70
+2026-08-27T04:10:55.7415819Z   GITHUB_AW_OTEL_JOB_START_MS: 1787803776313
+2026-08-27T04:10:55.7416152Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/sandbox/agent/logs/
+2026-08-27T04:10:55.7416608Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-08-27T04:10:55.7417026Z ##[endgroup]
+2026-08-27T04:10:55.8707721Z === Copilot Execution Summary ===
+2026-08-27T04:10:55.8708361Z Model: gpt-4o-2024-11-20
+2026-08-27T04:10:55.8708675Z 
+2026-08-27T04:10:55.8708836Z Conversation:
+2026-08-27T04:10:55.8709052Z 
+2026-08-27T04:10:55.8709653Z [1] ✓ view(path: /home/runner/work/skills-agentic-workflo...)
+2026-08-27T04:10:55.8710153Z 
+2026-08-27T04:10:55.8710581Z [2] ✓ view(path: /home/runner/work/skills-agentic-workflo...)
+2026-08-27T04:10:55.8711073Z 
+2026-08-27T04:10:55.8713279Z [3] ✓ $ curl -s https://github.blog/latest/ > /tmp/gh-aw/agent/github-latest.html && curl -s https://github.blog/changelog/ > /tmp/gh-aw/agent/github-changelog.html && curl -s https://awesome-copilot.github.com/workflows/ > /tmp/gh-aw/agent/copilot-workflows.html
+2026-08-27T04:10:55.8715313Z 
+2026-08-27T04:10:55.8715739Z [4] ✓ view(path: /tmp/gh-aw/agent/github-latest.html)
+2026-08-27T04:10:55.8716227Z 
+2026-08-27T04:10:55.8716624Z [5] ✓ view(path: /tmp/gh-aw/agent/github-changelog.html)
+2026-08-27T04:10:55.8717071Z 
+2026-08-27T04:10:55.8717459Z [6] ✓ view(path: /tmp/gh-aw/agent/copilot-workflows.html)
+2026-08-27T04:10:55.8717919Z 
+2026-08-27T04:10:55.8718796Z [7] ✓ rg(pattern: <h2>.*?</h2>, output_mode: content, multiline: true, paths: /tmp/gh-aw/agent/github-latest.html)
+2026-08-27T04:10:55.8719567Z 
+2026-08-27T04:10:55.8720351Z [8] ✓ rg(pattern: <h2>.*?</h2>, output_mode: content, multiline: true, paths: /tmp/gh-aw/agent/github-changelog.html)
+2026-08-27T04:10:55.8721182Z 
+2026-08-27T04:10:55.8722238Z [9] ◆ No updates were found in the GitHub Blog, Changelog, or Copilot Workflows sources. No changes were made to `github-info.md`. Task complete.
+2026-08-27T04:10:55.8723511Z 
+2026-08-27T04:10:55.8723683Z Statistics:
+2026-08-27T04:10:55.8724024Z   Turns: 4
+2026-08-27T04:10:55.8724335Z   Tools: 8/8 succeeded
+2026-08-27T04:10:55.8724766Z   Tokens: 102,995 total (102,562 in / 433 out)
+2026-08-27T04:10:55.8726142Z 
+2026-08-27T04:10:55.8726352Z Safe Outputs Preview:
+2026-08-27T04:10:55.8726780Z   Total: 1 entry
+2026-08-27T04:10:55.8727006Z 
+2026-08-27T04:10:55.8727132Z   [1] noop

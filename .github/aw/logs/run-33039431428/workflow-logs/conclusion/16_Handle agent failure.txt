@@ -1,0 +1,112 @@
+﻿2026-08-27T04:37:19.5421436Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-08-27T04:37:19.5422536Z with:
+2026-08-27T04:37:19.5430497Z   github-token: ***
+2026-08-27T04:37:19.5433266Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_agent_failure.cjs');
+await main();
+
+2026-08-27T04:37:19.5435954Z   debug: false
+2026-08-27T04:37:19.5436531Z   user-agent: actions/github-script
+2026-08-27T04:37:19.5437236Z   result-encoding: json
+2026-08-27T04:37:19.5437808Z   retries: 0
+2026-08-27T04:37:19.5438414Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-08-27T04:37:19.5439635Z env:
+2026-08-27T04:37:19.5440137Z   GH_AW_RUNTIME_FEATURES: 
+2026-08-27T04:37:19.5440918Z   GITHUB_AW_OTEL_TRACE_ID: fa0242ce274396c512be2bea926d7cc9
+2026-08-27T04:37:19.5441863Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b4cec59628571783
+2026-08-27T04:37:19.5442818Z   GITHUB_AW_OTEL_JOB_START_MS: 1787805432614
+2026-08-27T04:37:19.5443647Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-08-27T04:37:19.5444481Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-08-27T04:37:19.5446579Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-08-27T04:37:19.5449767Z   GH_AW_RUN_URL: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/actions/runs/33039431428
+2026-08-27T04:37:19.5451212Z   GH_AW_AGENT_CONCLUSION: failure
+2026-08-27T04:37:19.5451930Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-08-27T04:37:19.5452720Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 168
+2026-08-27T04:37:19.5453483Z   GH_AW_ENGINE_ID: copilot
+2026-08-27T04:37:19.5454423Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-08-27T04:37:19.5458579Z   GH_AW_ENGINE_SECRET_FAILURE_MESSAGE: **Alternative**: If your organization has a Copilot subscription, you can avoid the need for a personal access token by adding a top-level `permissions` block to your workflow file. This enables Copilot inference through the org using the built-in GitHub Actions token.
+
+```yaml
+permissions:
+  copilot-requests: write
+```
+
+See: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-08-27T04:37:19.5463214Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-08-27T04:37:19.5464966Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-08-27T04:37:19.5465660Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-08-27T04:37:19.5466415Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-08-27T04:37:19.5467548Z   GH_AW_AIC: 28.653
+2026-08-27T04:37:19.5468121Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-08-27T04:37:19.5468790Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-08-27T04:37:19.5469638Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-08-27T04:37:19.5470645Z   GH_AW_MCP_POLICY_ERROR: false
+2026-08-27T04:37:19.5471331Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-08-27T04:37:19.5472073Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: false
+2026-08-27T04:37:19.5472837Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-08-27T04:37:19.5474002Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-08-27T04:37:19.5475106Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-08-27T04:37:19.5476636Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-08-27T04:37:19.5480743Z   GH_AW_ENGINE_API_HOSTS: api.enterprise.githubcopilot.com,api.githubcopilot.com,api.business.githubcopilot.com,api.individual.githubcopilot.com
+2026-08-27T04:37:19.5483018Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-08-27T04:37:19.5483741Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 
+2026-08-27T04:37:19.5484454Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-08-27T04:37:19.5485183Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-08-27T04:37:19.5486078Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-08-27T04:37:19.5487241Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-08-27T04:37:19.5488071Z   GH_AW_DAILY_AI_CREDITS_TOTAL_EFFECTIVE_TOKENS: 
+2026-08-27T04:37:19.5489049Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-08-27T04:37:19.5489778Z   GH_AW_GROUP_REPORTS: false
+2026-08-27T04:37:19.5490745Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-08-27T04:37:19.5491515Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-08-27T04:37:19.5492312Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-08-27T04:37:19.5493504Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-08-27T04:37:19.5494112Z ##[endgroup]
+2026-08-27T04:37:19.7624840Z [ai-credits] aiCredits source=env(GH_AW_AIC) value=28.653
+2026-08-27T04:37:19.7633813Z [ai-credits] maxAICredits source=env(GH_AW_MAX_AI_CREDITS) value=1000
+2026-08-27T04:37:19.7642182Z [ai-credits] rateLimitSignal source=none
+2026-08-27T04:37:19.7658510Z Agent conclusion: failure
+2026-08-27T04:37:19.7662029Z Workflow name: update-github-info
+2026-08-27T04:37:19.7665622Z Workflow ID: update-github-info
+2026-08-27T04:37:19.7669755Z Secret verification result: success
+2026-08-27T04:37:19.7674139Z Engine secret failure message: (set)
+2026-08-27T04:37:19.7683025Z Assignment error count: 0
+2026-08-27T04:37:19.7699881Z Assign copilot failure count: 0
+2026-08-27T04:37:19.7704094Z Skill install failure count: 0
+2026-08-27T04:37:19.7708055Z Create discussion error count: 0
+2026-08-27T04:37:19.7715368Z Code push failure count: 0
+2026-08-27T04:37:19.7718341Z Checkout PR success: true
+2026-08-27T04:37:19.7720135Z AI credits: 28.653
+2026-08-27T04:37:19.7721458Z Configured max AI credits: 1000
+2026-08-27T04:37:19.7723330Z AI credits rate-limit error: false
+2026-08-27T04:37:19.7725770Z Max AI credits exceeded (harness budget abort): false
+2026-08-27T04:37:19.7727883Z Daily workflow AIC guardrail exceeded: false
+2026-08-27T04:37:19.7744161Z Inference access error: false
+2026-08-27T04:37:19.7744916Z MCP policy error: false
+2026-08-27T04:37:19.7745558Z Agentic engine timeout: false
+2026-08-27T04:37:19.7746264Z Model not supported error: false
+2026-08-27T04:37:19.7746981Z HTTP 400 response error: false
+2026-08-27T04:37:19.7749418Z Unknown model AI credits error: false
+2026-08-27T04:37:19.7750386Z Unknown model AI credits sources (audit/output): false/false
+2026-08-27T04:37:19.7753259Z Missing model pricing error: false (model: (unknown))
+2026-08-27T04:37:19.7756661Z Push repo-memory result: 
+2026-08-27T04:37:19.7759527Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-08-27T04:37:19.7761995Z Lockdown check failed: false
+2026-08-27T04:37:19.7762713Z OAuth token check failed: false
+2026-08-27T04:37:19.7763434Z Stale lock file check failed: false
+2026-08-27T04:37:19.7764150Z Cache memory enabled: false
+2026-08-27T04:37:19.7764911Z Cache memory restored (from restore outputs): false
+2026-08-27T04:37:19.7765860Z Missing tool report-as-failure: true
+2026-08-27T04:37:19.7766620Z Missing data report-as-failure: true
+2026-08-27T04:37:19.7825845Z Agent output content length: 24
+2026-08-27T04:37:19.8000716Z Searching for pull request from branch: main
+2026-08-27T04:37:20.1451175Z No pull request found for branch: main
+2026-08-27T04:37:20.1736719Z Parent issue creation is disabled (group-reports: false)
+2026-08-27T04:37:20.1813264Z Checking for existing issue with precise failure metadata for title: "[aw] update-github-info hit engine rate limit (HTTP 429)"
+2026-08-27T04:37:20.4861251Z No existing issue found, creating a new one
+2026-08-27T04:37:20.6840141Z Detected engine HTTP 429/rate-limit signal — using dedicated context message
+2026-08-27T04:37:20.6863721Z Generating failure issue footer with aiCredits context: 28.653
+2026-08-27T04:37:21.0660086Z [@octokit/request] "POST https://api.github.com/repos/vinayjain38/skills-agentic-workflows-that-read-the-room/issues" is deprecated. It is scheduled to be removed on Fri, 10 Mar 2028 00:00:00 GMT. See https://docs.github.com/en/rest/about-the-rest-api/api-versions
+2026-08-27T04:37:21.0688601Z ✓ Created new issue #11: https://github.com/vinayjain38/skills-agentic-workflows-that-read-the-room/issues/11
+2026-08-27T04:37:21.3816770Z Cascade check: 2 failure issue(s) in the last 60 min (threshold: 10) — no cascade

@@ -8,7 +8,7 @@ permissions:
   issues: read
   pull-requests: read
 engine: copilot
-model: gpt-5-mini
+model: gpt-4o
 network:
   allowed:
     - github.blog

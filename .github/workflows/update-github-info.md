@@ -10,6 +10,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 tools:
   github:
     toolsets: [default, repos]
@@ -28,7 +29,7 @@ Keep `site/content/github-info.md` current for Mona's review.
 
 1. Read `notes/mona-notes.md` before making any changes.
 2. Use the GitHub repository API tools to read repository guidance or reference files. Do not use terminal, CLI, or sandboxed commands for that repository reading.
-3. Web fetch `https://github.blog/latest/` and `https://github.blog/changelog/`.
+3. Web fetch `https://github.blog/latest/`, `https://github.blog/changelog/`, and `https://awesome-copilot.github.com/workflows/`.
 4. Identify useful, recent updates for developers. Prefer short, practical summaries and mention the source for every update.
 5. Update only `site/content/github-info.md`, preserving its existing structure and removing stale or superseded information when appropriate.
 6. Review the resulting diff for accuracy, clarity, and unintended changes.

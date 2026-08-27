@@ -8,7 +8,7 @@ permissions:
   issues: read
   pull-requests: read
 engine: copilot
-model: gpt-5-mini
+model: claude-haiku-4.5
 network:
   allowed:
     - github.blog

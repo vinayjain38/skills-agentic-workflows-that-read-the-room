@@ -5,7 +5,10 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  issues: read
+  pull-requests: read
 engine: copilot
+model: gpt-5-mini
 network:
   allowed:
     - github.blog
